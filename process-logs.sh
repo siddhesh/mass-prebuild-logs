@@ -172,7 +172,9 @@ packaging_error() {
 	return 1
 }
 
-comm -1 -3 <(sort .DONE) <(find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' | sort) |
+#comm -1 -3 <(cut -d , -f 2 gcc16-prebuild-report.out | sort) \
+#	<(find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' | sort) |
+find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' | sort |
 	while read name; do
 		pkg=$(ls -d --color=none $name-[0-9]*)
 		buildid=$(echo $pkg | sed 's/.*-\([0-9]\+\)$/\1/')

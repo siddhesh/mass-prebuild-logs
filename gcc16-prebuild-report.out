@@ -901,12 +901,14 @@
 1,rocksndiamonds,all,Inspect: build,
 1,rott,all,PKGBUG: c type,,"rt_def.h:330:3: error: cannot use keyword ‘false’ as enumeration constant"
 1,rpld,all,Ignore: packaging,
-1,rpm-git-tag-sort,all,Inspect: ,
+1,rpm-git-tag-sort,all,Ignore: buildroot_issue,
 1,rpminspect,all,PKGBUG: c23 str const,,"../lib/files.c:625:9: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,rr,all,Ignore: gcc15-fail,
 1,rshim,all,Inspect: compile error,,"/usr/include/fuse3/fuse_common.h:1155:1: error: static assertion failed: "fuse: off_t must be 64bit""
 1,rsyslog,all,Ignore: infra_issue,
 1,rtmidi,all,Inspect: build,
+1,rubygem-eventmachine,all,Ignore: infra_issue,
+1,rubygem-ffi,all,Ignore: infra_issue,
 1,rust-vhost-device-gpu,all,Ignore: gcc15-fail,
 1,sbsigntools,all,PKGBUG: unused,,"image.c:515:20: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
 1,scalasca,all,Ignore: buildroot_issue,
