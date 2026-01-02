@@ -124,7 +124,7 @@ find_error_line() {
 	fi
 
 	if [ "x$t" != "x" ]; then
-		echo "1,$name,all,$t,,$first_line"
+		echo "1,$name,all,$t,,\"$first_line\""
 		return 0
 	fi
 	return 1
