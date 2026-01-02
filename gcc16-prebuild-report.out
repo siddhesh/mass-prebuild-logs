@@ -793,6 +793,7 @@
 1,python-pyscf,all,Ignore: gcc15-fail,
 1,python-qcustomplot-pyqt,all,Ignore: packaging,
 1,python-rmtest,all,Ignore: buildroot_issue,
+1,python-scikit-image,all,Inspect: check,
 1,python-steps,all,Inspect: compile error,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
 1,python-symengine,all,Ignore: infra_issue,
 1,python-tkrzw,all,Ignore: excluded_arch,
@@ -803,6 +804,7 @@
 1,qatlib,all,Ignore: excluded_arch,
 1,qbs,all,Ignore: excluded_arch,
 1,qcad,all,Ignore: gcc15-fail,
+1,qclib,all,Inspect: build,
 1,qcoro,all,Ignore: gcc15-fail,
 1,qdmr,all,Ignore: gcc15-fail,
 1,qemu,all,Ignore: infra_issue,
@@ -812,12 +814,14 @@
 1,qoauth,all,Ignore: buildroot_issue,
 1,qoi,all,Inspect: compile error,,"/usr/include/stb_image.h:1822:28: error: implicit declaration of function ‘stbi__malloc_mad4’; did you mean ‘stbi__malloc_mad3’? [-Wimplicit-function-declaration]"
 1,qownnotes,all,Inspect: build,
+1,qpdf,all,Inspect: check,
 1,qsstv,all,Ignore: buildroot_issue,
 1,qt,all,Inspect: compile error,,"generators/makefile.cpp:3314:19: error: expected unqualified-id before ‘requires’"
 1,qt6-qtquick3d,all,Inspect: ,
 1,qt6-qtscxml,all,ICE,,"/builddir/build/BUILD/qt6-qtscxml-6.10.1-build/qtscxml-everywhere-src-6.10.1/src/scxmlqml/eventconnection_p.h:54:10: internal compiler error: in write_type, at cp/mangle.cc:2477"
 1,qt6-qtshadertools,all,Inspect: build,
 1,qt6-qtwebengine,all,PKGBUG: includes,,"../../../../../src/3rdparty/chromium/base/strings/to_string.h:87:25: error: ‘uint64_t’ does not name a type [-Wtemplate-body]"
+1,qtile,all,Ignore: infra_issue,
 1,quake3,all,Ignore: buildroot_issue,
 1,quantum-espresso,all,Ignore: gcc15-fail,
 1,quazip,all,Ignore: buildroot_issue,
@@ -870,6 +874,7 @@
 1,rbldnsd,all,Ignore: buildroot_issue,
 1,rb_libtorrent,all,Ignore: buildroot_issue,
 1,rc,all,Ignore: buildroot_issue,
+1,rccl,all,Ignore: infra_issue,
 1,rclone-browser,all,Ignore: buildroot_issue,
 1,rcs,all,Ignore: buildroot_issue,
 1,rcssmonitor,all,Inspect: compile error,,"/builddir/build/BUILD/rcssmonitor-19.0.0-build/rcssmonitor-19.0.0/rcss/rcg/simdjson/simdjson.h:6263:13: error: ‘class simdjson::internal::base_formatter<formatter>’ has no member named ‘print_newline’; did you mean ‘call_print_newline’? [-Wtemplate-body]"
@@ -896,9 +901,12 @@
 1,redisx,all,Ignore: buildroot_issue,
 1,redwax-tool,all,Inspect: check,
 1,rEFInd,all,Ignore: gcc15-fail,
+1,retroarch,all,Ignore: excluded_arch,
 1,rigsync,all,Ignore: buildroot_issue,
+1,rizin,all,Inspect: build,
 1,rmol,all,Inspect: check,
 1,rocksndiamonds,all,Inspect: build,
+1,root,all,Inspect: check,
 1,rott,all,PKGBUG: c type,,"rt_def.h:330:3: error: cannot use keyword ‘false’ as enumeration constant"
 1,rpld,all,Ignore: packaging,
 1,rpm-git-tag-sort,all,Ignore: buildroot_issue,
@@ -909,16 +917,45 @@
 1,rtmidi,all,Inspect: build,
 1,rubygem-eventmachine,all,Ignore: infra_issue,
 1,rubygem-ffi,all,Ignore: infra_issue,
+1,rubygem-opengl,all,Inspect: check,
+1,rubygem-puma,all,Inspect: check,
+1,rubygem-syck,all,Inspect: check,
+1,rusers,all,PKGBUG: incompat ptr,,"rstatd.c:103:62: error: passing argument 4 of ‘svc_register’ from incompatible pointer type [-Wincompatible-pointer-types]"
 1,rust-vhost-device-gpu,all,Ignore: gcc15-fail,
+1,rxvt-unicode,all,Inspect: compile error,,"rxvttoolkit.C:837:33: error: call of overloaded ‘lerp<int, int, int>(int, rgba::<unnamed enum>, uint16_t&)’ is ambiguous"
+1,s390utils,all,Inspect: build,
+1,samplv1,all,Inspect: check,
+1,sane-backends,all,PKGBUG: c23 str const,,"gphoto2.c:589:60: error: assignment of read-only location ‘*(const char *)strchr((const char *)*(folder_list + (sizetype)((long unsigned int)n * 8)), 32)’"
+1,satyr,all,Inspect: check,
+1,sblim-sfcc,all,Ignore: infra_issue,
 1,sbsigntools,all,PKGBUG: unused,,"image.c:515:20: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
+1,sc,all,PKGBUG: proto mismatch,,"format.c:537:31: error: too many arguments to function ‘pow’; expected 0, have 2"
 1,scalasca,all,Ignore: buildroot_issue,
+1,scanssh,all,PKGBUG: proto mismatch,,"atomicio.c:47:23: error: too many arguments to function ‘f’; expected 0, have 3"
+1,scd2html,all,PKGBUG: unused,,"src/main.c:255:13: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable=]"
+1,sciplot,all,Ignore: infra_issue,
+1,scipy,all,Inspect: check,
 1,scorep,all,Inspect: compile error,,"../../build-gcc-plugin/../src/adapters/compiler/gcc-plugin/scorep_plugin_gcc_version_compatibility.h:29:25: error: ‘TODO_verify_il’ was not declared in this scope; did you mean ‘TODO_verify_ssa’?"
+1,sdcv,all,Inspect: compile error,,"/usr/include/glib-2.0/glib/gunicode.h:837:34: error: invalid conversion from ‘const gchar*’ {aka ‘const char*’} to ‘gchar*’ {aka ‘char*’} [-fpermissive]"
+1,sdformat,all,Ignore: buildroot_issue,
+1,sdl2-compat,all,Inspect: check,
+1,sdl-crypto,all,Ignore: infra_issue,
+1,sdrpp,all,Ignore: excluded_arch,
 1,sdsl-lite,all,PKGBUG: unused,,"/builddir/build/BUILD/sdsl-lite-3.0.3-build/sdsl-lite-bb2eebb2de8a556661c00ba3c5b4c33b7c2c7a25/include/sdsl/enc_vector.hpp:248:20: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable=]"
+1,seabios,all,Ignore: infra_issue,
+1,seahorse-nautilus,all,Ignore: buildroot_issue,
+1,seatd,all,Ignore: infra_issue,
 1,seqan3,all,PKGBUG: unused,,"/builddir/build/BUILD/seqan3-3.4.0-build/seqan3-3.4.0-rc.3/test/unit/alignment/matrix/detail/simulated_alignment_test_template.hpp:58:12: error: variable ‘step’ set but not used [-Werror=unused-but-set-variable=]"
 1,shim-unsigned-aarch64,all,Ignore: gcc15-fail,
 1,shim-unsigned-x64,all,Ignore: gcc15-fail,
+1,shotcut,all,Inspect: compile error,,"/builddir/build/BUILD/shotcut-25.12.30-build/shotcut-25.12.30/src/sharedframe.cpp:123:38: error: ‘mlt_image_rgba64’ was not declared in this scope; did you mean ‘mlt_image_rgba’?"
+1,sigul,all,Ignore: buildroot_issue,
+1,simcoupe,all,Inspect: compile error,,"/usr/include/c++/16/bits/std_abs.h:110:3: error: redefinition of ‘constexpr __int128 std::abs(__int128)’"
 1,Simple-Fuzzer,all,PKGBUG: unused,,"os-abs.c:695:11: error: variable ‘repls’ set but not used [-Werror=unused-but-set-variable=]"
 1,Singular,all,Inspect: compile error,,"/usr/include/gfanlib/gfanlib_memoryresource.h:45:22: error: 'experimental' in namespace 'std' does not name a type"
+1,siril,all,Inspect: build,
+1,six,all,Ignore: buildroot_issue,
+1,ski,all,Ignore: excluded_arch,
 1,slic3r,all,Ignore: infra_issue,
 1,solidity,all,Inspect: build,
 1,spice,all,Inspect: compile error,,"../server/tests/test-display-base.cpp:809:5: error: either all initializer clauses should be designated or none of them should be"
@@ -932,10 +969,14 @@
 1,uboot-tools,all,Inspect: build,
 1,ucx,all,Inspect: compile error,,"perftest.c:236:11: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
 1,usd,all,Ignore: buildroot_issue,
+1,vectorscan,all,Ignore: excluded_arch,
 1,votca,all,Inspect: compile error,,"/builddir/build/BUILD/votca-2025.1-build/votca-2025.1/csg/src/tools/csg_gmxtopol.cc:80:12: error: reference to ‘format’ is ambiguous"
 1,vtk,all,Ignore: infra_issue,
 1,wangle,all,Ignore: gcc15-fail,
+1,warsow,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_tree.h:1402:72: error: static assertion failed: comparison object must be invocable with two arguments of key type"
 1,wasmedge,all,Inspect: compile error,,"/builddir/build/BUILD/wasmedge-0.15.0-build/wasmedge/include/host/wasi/inode.h:982:7: error: defining ‘WasmEdge::Host::WASI::PollerContext’, which previously failed to be complete in a SFINAE context [-Werror=sfinae-incomplete=]"
+1,wine-mono,all,Inspect: build,
 1,wivrn,all,Inspect: compile error,,"/builddir/build/BUILD/wivrn-25.12-build/WiVRn-25.12/dashboard/settings.cpp:544:27: error: ‘::close’ has not been declared; did you mean ‘pclose’?"
+1,wult,all,Ignore: buildroot_issue,
 1,xen,all,PKGBUG: c23 str const,,"libxl_internal.c:207:15: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,xtensor-python,all,Inspect: compile error,,"/usr/include/xtensor/utils/xutils.hpp:590:5: error: ‘concept’ does not name a type; did you mean ‘const’?"
