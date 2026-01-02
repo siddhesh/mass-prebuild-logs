@@ -149,7 +149,8 @@ find_ice() {
 
 buildroot_failed() {
 	if echo $1 | grep -q -e "/usr/bin/systemd-nspawn .*dnf5 builddep .*" \
-				-e "/usr/bin/systemd-nspawn .*releasever 44 install @buildsys-build.*"; then
+				-e "/usr/bin/systemd-nspawn .*dnf5 .* --releasever [0-9]\+ install .*" \
+				-e "error: Bad file:"; then
 		return 0
 	fi
 	return 1
