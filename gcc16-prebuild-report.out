@@ -1,0 +1,938 @@
+1,389-ds-base,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,4th,all,Ignore: infra_issue,
+1,6tunnel,all,Ignore: infra_issue,
+1,7zip,all,PKGBUG: bounds,,"../../Archive/../Common/ProgressUtils.h:12:3: error: array subscript ‘struct CLocalProgress[0]’ is partly outside array bounds of ‘unsigned char[32]’ [-Werror=array-bounds=]"
+1,abseil-cpp,all,Inspect: compile error,,"/builddir/build/BUILD/abseil-cpp-20250814.1-build/abseil-cpp-20250814.1/absl/synchronization/mutex_test.cc:1028:35: error: no matching function for call to ‘absl::lts_20250814::Condition::Condition(std::_Bind<std::less<int>(int, std::reference_wrapper<const int>)>*)’"
+1,AcetoneISO,all,Ignore: buildroot_issue,
+1,acpica-tools,all,PKGBUG: unused,,"../../../source/components/namespace/nsaccess.c:344:29: error: variable ‘NumCarats’ set but not used [-Werror=unused-but-set-variable=]"
+1,advancecomp,all,Ignore: infra_issue,
+1,airinv,all,Ignore: gcc15-fail,
+1,airrac,all,Ignore: gcc15-fail,
+1,airtsp,all,Inspect: build,
+1,alliance,all,Ignore: gcc15-fail,
+1,alsa-tools,all,Ignore: infra_issue,
+1,amarok,all,Inspect: build,
+1,amg4psblas,all,Inspect: build,
+1,amoebax,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_numeric.h:169:29: error: no match for call to ‘(Amoebax::Font::TextWidth) (std::remove_reference<short unsigned int&>::type, const char&)’"
+1,android-tools,all,Ignore: buildroot_issue,
+1,anet,all,Inspect: check,
+1,angband,all,Inspect: build,
+1,ann,all,Inspect: compile error,,"ann_test.cpp:620:8: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘char*’)"
+1,anthy,all,Ignore: packaging,
+1,anymeal,all,Inspect: build,
+1,anyterm,all,PKGBUG: c++ type,,"../include/charset/char_t.hh:65:26: error: redeclaration of C++ built-in type ‘char8_t’ [-fpermissive]"
+1,aoetools,all,Ignore: packaging,
+1,apbs,all,Ignore: gcc15-fail,
+1,applet-window-buttons,all,Ignore: gcc15-fail,
+1,appstream-generator,all,PKGBUG: includes,,"../src/backends/freebsd/fbsdpkg.h:72:18: error: ‘mutex’ in namespace ‘std’ does not name a type"
+1,apt-cacher-ng,all,Inspect: compile error,,"/builddir/build/BUILD/apt-cacher-ng-3.7.5-build/apt-cacher-ng-3.7.5/src/aclogger.h:46:16: error: found ‘:’ in nested-name-specifier, expected ‘::’"
+1,arbor,all,Ignore: buildroot_issue,
+1,arc,all,PKGBUG: c type,,"arc.h:51:17: error: expected identifier or ‘(’ before ‘_Generic’"
+1,archivemount,all,Ignore: infra_issue,
+1,ardour8,all,Ignore: infra_issue,
+1,arduino-listSerialPortsC,all,Ignore: infra_issue,
+1,argparse,all,Ignore: infra_issue,
+1,arm-compute-library,all,Ignore: excluded_arch,
+1,arm-none-eabi-gcc-cs,all,GCC_DERIVATIVE,,"../../gcc-15.2.0/libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
+1,arm-none-eabi-newlib,all,Ignore: buildroot_issue,
+1,arpack,all,Inspect: build,
+1,astromenace,all,Ignore: infra_issue,
+1,at,all,Ignore: infra_issue,
+1,atlas,all,Ignore: pkgfail_prep,
+1,aubit4gl,all,Ignore: excluded_arch,
+1,autogen,all,PKGBUG: c23 str const,,"file.c:61:20: error: initialization discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,automake,all,Inspect: compile error,,"conftest.cpp:192:22: error: invalid conversion from 'const char8_t*' to 'const char*' [-fpermissive]"
+1,avr-gcc,all,GCC_DERIVATIVE,,"../../gcc-15.1.0/libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
+1,awesome,all,Ignore: gcc15-fail,
+1,aws,all,Ignore: buildroot_issue,
+1,axel,all,Ignore: gcc15-fail,
+1,bcachefs-tools,all,Ignore: gcc15-fail,
+1,bear-factory,all,Inspect: compile error,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,bibletime,all,Inspect: compile error,,"/builddir/build/BUILD/bibletime-3.1.1-build/bibletime-3.1.1/redhat-linux-build/bibletime_backend_autogen/ZNV6MPGS4G/../../../src/backend/drivers/../keys/cswordversekey.h:83:46: error: cannot convert ‘std::common_comparison_category_t<std::strong_ordering, std::strong_ordering, std::strong_ordering, std::strong_ordering, std::strong_ordering>’ {aka ‘std::strong_ordering’} to ‘bool’ in return"
+1,bind9-next,all,Inspect: check,
+1,bird,all,Inspect: check,
+1,bitlbee-steam,all,PKGBUG: c type,,"steam-api.c:136:14: error: two or more data types in declaration specifiers"
+1,blis,all,Inspect: compile error,,"kernels/haswell/3/sup/bli_gemmsup_rv_haswell_asm_d6x8m.c:1770:1: error: bp cannot be used in ‘asm’ here"
+1,blogc,all,PKGBUG: includes,,"/builddir/build/BUILD/blogc-0.20.1_20240602.b1ae9c9-build/blogc/tests/common/check_config_parser.c:23:5: error: ‘uintptr_t’ undeclared (first use in this function)"
+1,blt,all,Ignore: gcc15-fail,
+1,bluechi,all,Inspect: compile error,,"../src/libbluechi/test/bus/utils/bus_id_is_valid_test.c:17:53: error: ‘%s’ directive argument is null [-Werror=format-overflow=]"
+1,bochs,all,Ignore: buildroot_issue,
+1,bolt,all,Inspect: check,
+1,bonnie++,all,Ignore: packaging,
+1,bout++,all,Inspect: compile error,,"/builddir/build/BUILD/bout++-5.2.0-build/BOUT++-v5.2.0/include/bout/boutexception.hxx:23:34: error: call to consteval function ‘fmt::v11::fstring<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>((* & format))’ is not a constant expression"
+1,bowtie,all,Ignore: excluded_arch,
+1,bpftrace,all,Ignore: infra_issue,
+1,breezy,all,Ignore: gcc15-fail,
+1,brotli,all,Ignore: infra_issue,
+1,btrfs-assistant,all,Ignore: gcc15-fail,
+1,btrfs-efi,all,Ignore: gcc15-fail,
+1,buffer,all,PKGBUG: proto mismatch,,"sem.c:63:1: error: number of arguments doesn’t match prototype"
+1,busybox,all,Inspect: build,
+1,bwbasic,all,PKGBUG: proto mismatch,,"renum.c:114:11: error: too many arguments to function ‘instr’; expected 0, have 2"
+1,c4fs,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:29: error: no match for ‘operator[]’ (operand types are ‘c4::fs::EntryList::iterator_impl<c4::fs::EntryList>’ and ‘long int’)"
+1,cachelib,all,Ignore: gcc15-fail,
+1,cataclysm-dda,all,Inspect: compile error,,"src/inventory.h:107:7: error: defining ‘inventory’, which previously failed to be complete in a SFINAE context [-Werror=sfinae-incomplete=]"
+1,catatonit,all,Inspect: build,
+1,cbmc,all,Inspect: compile error,,"/usr/include/assert.h:97:1: error: parse error before '( true ) __attribute__'"
+1,cdrkit,all,Ignore: infra_issue,
+1,ceph,all,PKGBUG: includes,,"/builddir/build/BUILD/ceph-20.2.0-build/ceph-20.2.0/src/common/Formatter.h:209:55: error: ‘uint64_t’ has not been declared"
+1,ceres-solver,all,Ignore: gcc15-fail,
+1,cfdg,all,Inspect: build,
+1,cflow,all,Ignore: infra_issue,
+1,cgit,all,PKGBUG: c type,,"builtin/index-pack.c:89:8: error: expected ‘{’ before ‘thread_local’"
+1,cgreen,all,Ignore: gcc15-fail,
+1,charliecloud,all,Ignore: pkgfail_install,
+1,chatty,all,Ignore: gcc15-fail,
+1,chicken,all,Ignore: infra_issue,
+1,chkrootkit,all,Inspect: build,
+1,chordii,all,PKGBUG: proto mismatch,,"chordii.c:636:9: error: number of arguments doesn’t match prototype"
+1,cinnamon-menus,all,Ignore: infra_issue,
+1,civetweb,all,Ignore: infra_issue,
+1,cjdns,all,Ignore: gcc15-fail,
+1,ck,all,Ignore: infra_issue,
+1,clang13,all,PKGBUG: includes,,"/usr/lib64/llvm13/include/llvm/ADT/SmallVector.h:92:69: error: ‘uint64_t’ was not declared in this scope"
+1,clang17,all,PKGBUG: includes,,"/usr/lib64/llvm17/include/llvm/ADT/SmallVector.h:109:62: error: use of undeclared identifier 'uint64_t'"
+1,clang18,all,Inspect: check,
+1,clap,all,Ignore: infra_issue,
+1,coan,all,Ignore: gcc15-fail,
+1,cockpit,all,Ignore: gcc15-fail,
+1,cocot,all,PKGBUG: incompat ptr,,"sigwinch.c:43:20: error: assignment to ‘__sighandler_t’ {aka ‘void (*)(int)’} from incompatible pointer type ‘void (*)(void)’ [-Wincompatible-pointer-types]"
+1,codeblocks,all,Inspect: compile error,,"/usr/include/astyle.h:301:44: error: 'std::string_view' has not been declared"
+1,coin-or-lemon,all,Inspect: compile error,,"/builddir/build/BUILD/coin-or-lemon-1.3.1-build/lemon-1.3.1/lemon/bits/array_map.h:320:21: error: ‘lemon::ArrayMap<lemon::DigraphExtender<lemon::ListDigraphBase>, lemon::ListDigraphBase::Node, lemon::dim2::Point<int> >::Allocator’ {aka ‘class std::allocator<lemon::dim2::Point<int> >’} has no member named ‘destroy’"
+1,collada-dom,all,Inspect: compile error,,"/builddir/build/BUILD/collada-dom-2.5.0-build/collada-dom-2.5.0/dom/src/dae/daeMetaElement.cpp:178:26: error: ambiguous overload for ‘operator!=’ (operand types are ‘daeStringRef’ and ‘long int’)"
+1,colorscad,all,Ignore: buildroot_issue,
+1,compat-flex,all,PKGBUG: proto mismatch,,"main.c:379:27: error: too many arguments to function ‘unlink’; expected 0, have 1"
+1,compat-gdbm,all,PKGBUG: incompat ptr,,"gdbmtool.c:1151:5: error: initialization of ‘int (*)(struct handler_param *, size_t *)’ {aka ‘int (*)(struct handler_param *, long unsigned int *)’} from incompatible pointer type ‘int (*)(void)’ [-Wincompatible-pointer-types]"
+1,compat-guile18,all,Ignore: packaging,
+1,compat-readline6,all,Ignore: gcc15-fail,
+1,composable_kernel,all,Ignore: infra_issue,
+1,condor,all,Inspect: build,
+1,contour-terminal,all,PKGBUG: includes,,"/builddir/build/BUILD/contour-terminal-0.6.1.7494-build/contour-0.6.1.7494/src/crispy/TrieMap.h:67:45: error: ‘uint8_t’ does not name a type [-Wtemplate-body]"
+1,coreutils,all,Ignore: gcc15-fail,
+1,cowpatty,all,PKGBUG: incompat ptr,,"cowpatty.c:1022:24: error: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,cowsql,all,PKGBUG: c23 str const,,"src/server.c:1020:12: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,cpio,all,Ignore: buildroot_issue,
+1,cpp-httplib,all,Ignore: gcc15-fail,
+1,cppi,all,Ignore: infra_issue,
+1,CppMicroServices,all,Ignore: gcc15-fail,
+1,cproc,all,PKGBUG: c23 str const,,"pp.c:345:51: error: assignment of read-only location ‘*(const char *)strchr(newloc.file, 34)’"
+1,crest,all,Inspect: build,
+1,cross-gcc,all,GCC_DERIVATIVE,,"../../gcc-15.2.1-20250808/libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
+1,cryfs,all,Ignore: excluded_arch,
+1,cryptopp,all,Inspect: build,
+1,cscppc,all,Inspect: build,
+1,csdiff,all,Inspect: build,
+1,csnappy,all,Ignore: infra_issue,
+1,cswrap,all,Inspect: build,
+1,cvise,all,Ignore: gcc15-fail,
+1,cwdaemon,all,Ignore: pkgfail_install,
+1,cxxtools,all,Inspect: compile error,,"../include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
+1,cyrus-imapd,all,Inspect: compile error,,"/usr/include/unicode/localpointer.h:561:26: error: parameter declared 'auto'"
+1,darktable,all,ICE,,/builddir/build/BUILD/darktable-5.4.0-build/darktable-5.4.0/src/dtgtk/thumbnail.c:2401:1: internal compiler error: Segmentation fault
+1,dbcsr,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_algobase.h:425:32: error: argument 1 null where non-null expected because argument 3 is nonzero [-Werror=nonnull]"
+1,dbus-broker,all,Ignore: gcc15-fail,
+1,dbus-test-runner,all,Ignore: infra_issue,
+1,dc3dd,all,PKGBUG: proto mismatch,,"./config.h:8:22: error: too many arguments to function 'usage'; expected 0, have 1"
+1,dd2,all,PKGBUG: c type,,"main.h:24:13: error: ‘bool’ cannot be defined via ‘typedef’"
+1,ddnet,all,Ignore: gcc15-fail,
+1,debhelper,all,Ignore: gcc15-fail,
+1,deepin-image-viewer,all,Ignore: gcc15-fail,
+1,deepin-screensaver,all,Ignore: buildroot_issue,
+1,deskflow,all,Ignore: excluded_arch,
+1,device-mapper-multipath,all,PKGBUG: c23 str const,,"parser.c:155:19: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,dftd4,all,Ignore: gcc15-fail,
+1,dhcpd-pools,all,PKGBUG: c type,,"./string.h:777:20: error: expected identifier or ‘(’ before ‘_Generic’"
+1,direwolf,all,Ignore: buildroot_issue,
+1,disk-utilities,all,PKGBUG: unused,,"discferret_dfe2.c:94:14: error: variable ‘carry’ set but not used [-Werror=unused-but-set-variable=]"
+1,dispenso,all,Ignore: gcc15-fail,
+1,dl_poly,all,Ignore: buildroot_issue,
+1,dnf5,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_iterator.h:1111:16: error: array subscript 2 is outside array bounds of ‘const char32_t[1]’ [-Werror=array-bounds=]"
+1,dovecot,all,Ignore: gcc15-fail,
+1,dqlite,all,PKGBUG: c type,,"src/lib/serialize.h:40:16: error: conflicting types for 'float_t'; have 'double'"
+1,drbd,all,PKGBUG: unused,,"terminal/MDspTaskDetail.cpp:263:22: error: variable ‘skip_ctr’ set but not used [-Werror=unused-but-set-variable=]"
+1,drumkv1,all,Ignore: gcc15-fail,
+1,drumstick0,all,Ignore: gcc15-fail,
+1,dssi,all,Ignore: gcc15-fail,
+1,dt,all,PKGBUG: c type,,"../common.h:364:33: error: ‘bool’ cannot be defined via ‘typedef’"
+1,dtach,all,PKGBUG: incompat ptr,,"attach.c:102:26: error: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,dtc,all,PKGBUG: c23 str const,,"fdtput.c:235:11: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,dwayland,all,Ignore: gcc15-fail,
+1,dwgrep,all,Ignore: infra_issue,
+1,dxvk-native,all,Ignore: gcc15-fail,
+1,e-antic,all,Ignore: infra_issue,
+1,eccodes,all,Ignore: excluded_arch,
+1,eclipse-swt,all,Ignore: gcc15-fail,
+1,efifs,all,PKGBUG: unused,,"StringFuncs.c:113:15: error: variable ‘Item’ set but not used [-Werror=unused-but-set-variable=]"
+1,eigen3,all,Ignore: gcc15-fail,
+1,elements-alexandria,all,Inspect: build,
+1,elfutils,all,Inspect: compile error,,"/usr/include/bits/unistd.h:32:10: error: ‘*read’ specified size between 18446744069414588418 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Werror=stringop-overflow=]"
+1,embree3,all,Ignore: gcc15-fail,
+1,enet,all,Ignore: infra_issue,
+1,engauge-digitizer,all,Ignore: infra_issue,
+1,enigma,all,Inspect: compile error,,"main.cc:885:77: error: ‘make_unique’ is not a member of ‘std’"
+1,ensmallen,all,Ignore: infra_issue,
+1,epstool,all,ICE,,./src/cimg.c:191:1: internal compiler error: Segmentation fault
+1,ergo,all,Inspect: compile error,,"../../source/utilities_basic/pi.h:57:20: error: expected unqualified-id before numeric constant"
+1,erlang-eleveldb,all,Ignore: gcc15-fail,
+1,erlang-esasl,all,Ignore: gcc15-fail,
+1,espresso,all,Ignore: gcc15-fail,
+1,eterm,all,Ignore: infra_issue,
+1,eth-tools,all,Inspect: compile error,,"stream.c:250:9: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
+1,evolution-data-server,all,Ignore: infra_issue,
+1,exiv2,all,Ignore: infra_issue,
+1,extrema,all,Inspect: compile error,,"CMD_write.cpp:176:20: error: use of deleted function 'std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*) [with _Traits = char_traits<char>]'"
+1,fb303,all,Ignore: gcc15-fail,
+1,fbgemm,all,Inspect: compile error,,"/builddir/build/BUILD/fbgemm-1.0.0-build/FBGEMM-1.0.0/src/EmbeddingSpMDMAutovec.cc:380:16: error: invalid exit from OpenMP structured block [-Wtemplate-body]"
+1,fbida,all,PKGBUG: proto mismatch,,"genthumbnail.c:128:19: error: too many arguments to function ‘jpeg_std_error’; expected 0, have 1"
+1,fbthrift,all,Ignore: gcc15-fail,
+1,fcode-utils,all,Ignore: gcc15-fail,
+1,fctxpd,all,PKGBUG: incompat ptr,,"fpin_main.c:132:33: error: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,feather,all,ICE,,/builddir/build/BUILD/feather-2.8.1-build/feather-2.8.1/src/utils/ScopeGuard.h:149:6: internal compiler error: Segmentation fault
+1,fence-agents,all,PKGBUG: c23 str const,,"virt-serial.c:86:20: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,filebench,all,PKGBUG: c type,,"vars.h:223:32: error: two or more data types in declaration specifiers"
+1,firefox,all,Ignore: pkgfail_prep,
+1,firewalk,all,PKGBUG: incompat ptr,,"init.c:62:27: error: passing argument 2 of ‘catch_sig’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,fizz,all,Ignore: gcc15-fail,
+1,flang,all,Ignore: buildroot_issue,
+1,fldigi,all,Ignore: buildroot_issue,
+1,fntsample,all,Ignore: infra_issue,
+1,folly,all,Ignore: gcc15-fail,
+1,fooyin,all,Ignore: gcc15-fail,
+1,fossil,all,Ignore: gcc15-fail,
+1,fprobe-ulog,all,Ignore: pkgfail_install,
+1,freedv,all,Ignore: buildroot_issue,
+1,freeopcua,all,Inspect: compile error,,"/builddir/build/BUILD/freeopcua-0-build/freeopcua-bd13aee2455c1d137bee45f7d2aedea8dd30115c/src/server/address_space_internal.cpp:319:24: error: call to consteval function ‘fmt::v11::fstring<unsigned int&>("address_space_internal| request to delete a callback using unknown handle: {1}")’ is not a constant expression"
+1,fritzing,all,Ignore: gcc15-fail,
+1,frr,all,Inspect: compile error,,"/usr/include/absl/base/policy_checks.h:81:2: error: #error "C++ versions less than C++17 are not supported.""
+1,fscrypt,all,Ignore: buildroot_issue,
+1,funguloids,all,Ignore: buildroot_issue,
+1,fuse-btfs,all,Ignore: excluded_arch,
+1,fxload,all,Ignore: infra_issue,
+1,fyi,all,PKGBUG: c23 str const,,"../main.c:447:27: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,g2clib,all,Ignore: gcc15-fail,
+1,gala,all,Ignore: buildroot_issue,
+1,gambas3,all,Ignore: buildroot_issue,
+1,gamemode,all,Ignore: infra_issue,
+1,game-music-emu,all,Ignore: infra_issue,
+1,gau2grid,all,Ignore: infra_issue,
+1,gauche,all,Ignore: infra_issue,
+1,gcc,all,Ignore: infra_issue,
+1,gcl,all,PKGBUG: c type,,"./h/../h/protoize.h:76:35: error: expected identifier or ‘(’ before ‘_Generic’"
+1,gconfmm26,all,Ignore: gcc15-fail,
+1,gdb,all,PKGBUG: c23 str const,,"../../bfd/bfd.c:1062:23: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,gdb-gef,all,Ignore: gcc15-fail,
+1,gdl,all,Ignore: gcc15-fail,
+1,gecode,all,Inspect: compile error,,"./gecode/search/cutoff.hpp:103:3: error: inlining failed in call to ‘always_inline’ ‘Gecode::Search::CutoffAppend::~CutoffAppend()’: --param max-inline-insns-single limit reached"
+1,genimage,all,Inspect: check,
+1,gentoo,all,PKGBUG: c type,,"xmlutil.c:73:17: error: two or more data types in declaration specifiers"
+1,gettext,all,Inspect: compile error,,"test-stdcountof-h.c:45:10: error: implicit declaration of function ‘_gl_verify_is_array’ [-Wimplicit-function-declaration]"
+1,gforth,all,PKGBUG: incompat ptr,,"signals.c:402:29: error: initialization of ‘void (*)(void)’ from incompatible pointer type ‘void (*)(int)’ [-Wincompatible-pointer-types]"
+1,ghc,all,Ignore: pkgfail_install,
+1,ghdl,all,GCC_DERIVATIVE,,"../../libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
+1,gimagereader,all,Ignore: gcc15-fail,
+1,gimp,all,Ignore: gcc15-fail,
+1,gimp-dds-plugin,all,Ignore: gcc15-fail,
+1,gimp-wavelet-denoise-plugin,all,Ignore: gcc15-fail,
+1,git,all,Ignore: gcc15-fail,
+1,gjs,all,Inspect: compile error,,"/usr/include/c++/16/bits/predefined_ops.h:105:47: error: cannot bind rvalue reference of type ‘GI::OwnedInfo<GI::InfoTag::FIELD>&&’ to lvalue of type ‘GI::OwnedInfo<GI::InfoTag::FIELD>’"
+1,gkrellm-wifi,all,PKGBUG: incompat ptr,,"gkrellm-wifi-chart.c:106:52: error: passing argument 2 of ‘gkrellm_set_draw_chart_function’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,glade,all,Inspect: build,
+1,glibc,all,Ignore: infra_issue,
+1,glibd,all,Ignore: buildroot_issue,
+1,glimpse,all,PKGBUG: proto mismatch,,"hash.c:61:1: error: number of arguments doesn’t match prototype"
+1,global,all,PKGBUG: incompat ptr,,"db.c:97:18: error: assignment to ‘int (*)(const struct __db *, const DBT *, u_int)’ {aka ‘int (*)(const struct __db *, const DBT *, unsigned int)’} from incompatible pointer type ‘int (*)(void)’ [-Wincompatible-pointer-types]"
+1,globus-gsi-proxy-core,all,Inspect: build,
+1,gloo,all,Ignore: buildroot_issue,
+1,gmic,all,Ignore: infra_issue,
+1,gnatcoll,all,Ignore: buildroot_issue,
+1,gnatcoll-bindings,all,Ignore: buildroot_issue,
+1,gnatcoll-db,all,Ignore: buildroot_issue,
+1,gnofract4d,all,Ignore: gcc15-fail,
+1,gnome-software,all,Ignore: gcc15-fail,
+1,gnome-todo,all,Ignore: gcc15-fail,
+1,gnuastro,all,Inspect: check,
+1,gnucash,all,Ignore: excluded_arch,
+1,gnu-efi,all,Ignore: gcc15-fail,
+1,gnupg2,all,Ignore: infra_issue,
+1,gnupg-pkcs11-scd,all,Ignore: infra_issue,
+1,gnustep-base,all,Ignore: infra_issue,
+1,gocryptfs,all,Inspect: check,
+1,golang-maunium-mautrix,all,Ignore: buildroot_issue,
+1,golly,all,Inspect: compile error,,"../cmdline/bgolly.cpp:156:58: error: reference to ‘popcount’ is ambiguous"
+1,gprbuild,all,Ignore: buildroot_issue,
+1,grantlee-qt5,all,Inspect: compile error,,"/builddir/build/BUILD/grantlee-qt5-5.3.1-build/grantlee-5.3.1/redhat-linux-build/templates/defaulttags/grantlee_defaulttags_autogen/EWIEGA46WW/../../../../../templates/defaulttags/cycle.h:43:18: error: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]"
+1,gromacs,all,ICE,,/builddir/build/BUILD/gromacs-2025.4-build/gromacs-2025.4/src/external/scope_guard/scope_guard.h:140:6: internal compiler error: Segmentation fault
+1,grout,all,Ignore: excluded_arch,
+1,grub2,all,Ignore: infra_issue,
+1,gsequencer,all,Ignore: buildroot_issue,
+1,gshutdown,all,PKGBUG: incompat ptr,,"callback_main_window.c:89:43: error: passing argument 2 of ‘g_timeout_add’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,gt,all,PKGBUG: proto mismatch,,"dim.c:350:17: error: too many arguments to function ‘efopen’; expected 0, have 2"
+1,GtkAda3,all,Inspect: compile error,,"gtkada-canvas_view.ads:592:32: error: implicit conversion of anonymous access parameter not allowed"
+1,guestfs-tools,all,Inspect: check,
+1,guitarix,all,Ignore: gcc15-fail,
+1,gumbo-parser,all,Inspect: compile error,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
+1,hamlib,all,Ignore: packaging,
+1,hash-o-matic,all,Ignore: buildroot_issue,
+1,hatari,all,Ignore: gcc15-fail,
+1,hddtemp,all,Ignore: infra_issue,
+1,hedgewars,all,Ignore: excluded_arch,
+1,hello,all,Ignore: gcc15-fail,
+1,hercstudio,all,Ignore: gcc15-fail,
+1,hexer,all,PKGBUG: incompat ptr,,"config-test.c:82:40: error: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,hfsutils,all,Ignore: gcc15-fail,
+1,highfive,all,Ignore: gcc15-fail,
+1,hping3,all,Ignore: gcc15-fail,
+1,hpx,all,Inspect: compile error,,"/builddir/build/BUILD/hpx-1.11.0-build/hpx-1.11.0/libs/core/tag_invoke/include/hpx/functional/detail/invoke.hpp:141:51: error: no match for call to ‘(hpx::parallel::detail::extract_key) (hpx::util::detail::operator_brackets_proxy<hpx::util::zip_iterator<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > > > >)’"
+1,html-xml-utils,all,PKGBUG: c type,,"dtd.hash:117:1: error: conflicting types for ‘lookup_element’; have ‘const ElementType *(const char *, size_t)’ {aka ‘const struct _ElementType *(const char *, long unsigned int)’}"
+1,httptunnel,all,PKGBUG: proto mismatch,,"common.h:81:7: error: too many arguments to function ‘log_annoying’; expected 0, have 4"
+1,hugs98,all,Inspect: build,
+1,hypre,all,Inspect: build,
+1,hyprutils,all,PKGBUG: includes,,"/builddir/build/BUILD/hyprutils-0.7.1-build/hyprutils-0.7.1/./include/hyprutils/animation/../memory/./SharedPtr.hpp:116:41: error: ‘uintptr_t’ does not name a type [-Wtemplate-body]"
+1,icecat,all,Ignore: pkgfail_install,
+1,idle3-tools,all,Ignore: packaging,
+1,iguanaIR,all,PKGBUG: proto mismatch,,"/builddir/build/BUILD/iguanaIR-1.1.0-build/iguanaIR-1.1.0/daemon.c:194:17: error: too many arguments to function ‘initServer’; expected 0, have 1"
+1,imath,all,Inspect: check,
+1,imhex,all,PKGBUG: unused,,"/builddir/build/BUILD/imhex-1.37.4-build/ImHex/lib/external/pattern_language/lib/source/pl/lib/std/file.cpp:22:24: error: variable ‘fileCounter’ set but not used [-Werror=unused-but-set-variable=]"
+1,infinipath-psm,all,PKGBUG: unused,,"psm_mpool.c:359:12: error: variable ‘nbytes’ set but not used [-Werror=unused-but-set-variable=]"
+1,inih,all,Ignore: infra_issue,
+1,inkscape,all,PKGBUG: includes,,"/builddir/build/BUILD/inkscape-1.4.2-build/inkscape-1.4.2_2025-05-08_ebf0e940d0/src/util/pool.cpp:13:31: error: ‘uintptr_t’ does not name a type"
+1,insight,all,PKGBUG: unused,,"archive.c:2281:12: error: variable ‘elt_no’ set but not used [-Werror=unused-but-set-variable=]"
+1,intel-compute-runtime,all,PKGBUG: includes,,"/builddir/build/BUILD/intel-compute-runtime-25.44.36015.8-build/compute-runtime-25.44.36015.8/shared/source/os_interface/linux/local/dg1/drm_tip_helper.cpp:15:38: error: ‘uint64_t’ was not declared in this scope"
+1,intel-ipp-crypto-mb,all,PKGBUG: unused,,"/builddir/build/BUILD/intel-ipp-crypto-mb-1.0.10-build/ipp-crypto-ippcp_2021.10.0/sources/ippcp/crypto_mb/include/internal/sm4/sm4_mb.h:352:23: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable=]"
+1,intel-undervolt,all,Ignore: excluded_arch,
+1,ipmctl,all,PKGBUG: unused,,"/builddir/build/BUILD/ipmctl-03.00.00.0468-build/ipmctl-03.00.00.0468/DcpmPkg/cli/ShowPcdCommand.c:470:10: error: variable ‘IdentificationInfoIndex’ set but not used [-Werror=unused-but-set-variable=]"
+1,ipv6calc,all,PKGBUG: c23 str const,,"showinfo.c:197:27: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,irsim,all,Ignore: pkgfail_install,
+1,irstlm,all,PKGBUG: incompat ptr,,"thpool.c:339:24: error: assignment to '__sighandler_t' {aka 'void (*)(int)'} from incompatible pointer type 'void (*)(void)' [-Wincompatible-pointer-types]"
+1,isoimagewriter,all,Ignore: buildroot_issue,
+1,itk,all,Ignore: gcc15-fail,
+1,jack-mixer,all,Ignore: gcc15-fail,
+1,java-21-openjdk-portable,all,Inspect: check,
+1,java-25-openjdk-portable,all,Inspect: check,
+1,java-latest-openjdk-portable,all,Inspect: check,
+1,js8call,all,Ignore: buildroot_issue,
+1,json-fortran,all,Ignore: gcc15-fail,
+1,jss,all,Ignore: gcc15-fail,
+1,julia,all,Inspect: check,
+1,k2hash,all,Ignore: excluded_arch,
+1,k3guitune,all,Ignore: buildroot_issue,
+1,kafs-client,all,PKGBUG: c23 str const,,"lib_cellserv.c:72:19: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,kata-containers,all,Ignore: excluded_arch,
+1,katago,all,Ignore: gcc15-fail,
+1,kbdd,all,PKGBUG: c type,,"libkbdd.c:233:1: error: conflicting types for ‘kbdd_default_loop’; have ‘void *(Display *)’"
+1,kbilliards,all,Ignore: buildroot_issue,
+1,kcm_systemd,all,Ignore: gcc15-fail,
+1,kdewebdev,all,Ignore: buildroot_issue,
+1,kf6-kcoreaddons,all,Ignore: infra_issue,
+1,kf6-kpeople,all,Ignore: infra_issue,
+1,kf6-kwallet,all,Ignore: buildroot_issue,
+1,kio-admin,all,Ignore: infra_issue,
+1,kita,all,Ignore: buildroot_issue,
+1,kitty,all,Ignore: gcc15-fail,
+1,klamav,all,Ignore: buildroot_issue,
+1,kokkos,all,Ignore: excluded_arch,
+1,kompare,all,Ignore: buildroot_issue,
+1,kopete,all,Inspect: compile error,,"/usr/include/c++/16/type_traits:506:12: error: redefinition of ‘struct std::__is_integral_helper<__int128>’"
+1,krb5,all,PKGBUG: c23 str const,,"ccbase.c:213:8: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,kreetingkard,all,Ignore: buildroot_issue,
+1,kronosnet,all,PKGBUG: c23 str const,,"int_links_acl_ip.c:54:14: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,ksh,all,Ignore: infra_issue,
+1,ktextaddons,all,Ignore: infra_issue,
+1,ktrip,all,Ignore: infra_issue,
+1,kyua,all,Ignore: gcc15-fail,
+1,ladspa-blop-plugins,all,Ignore: gcc15-fail,
+1,ladspa-vco-plugins,all,Ignore: infra_issue,
+1,latte-integrale,all,Inspect: compile error,,"ReadingFile.cpp:413:10: error: no match for ‘operator>>’ (operand types are ‘std::ifstream’ {aka ‘std::basic_ifstream<char>’} and ‘char*’)"
+1,lazarus,all,Ignore: infra_issue,
+1,lcms,all,Ignore: infra_issue,
+1,lexertl17,all,Ignore: excluded_arch,
+1,lib3mf,all,Inspect: check,
+1,libaio,all,Ignore: infra_issue,
+1,libblkio,all,Ignore: pkgfail_prep,
+1,libcamera,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_construct.h:166:7: error: array subscript ‘std::mutex[0]’ is partly outside array bounds of ‘unsigned char [32]’ [-Werror=array-bounds=]"
+1,libcap,all,Inspect: check,
+1,libchewing,all,Ignore: gcc15-fail,
+1,libcint,all,Ignore: excluded_arch,
+1,libclaw,all,Inspect: compile error,,"/builddir/build/BUILD/libclaw-1.7.4-build/libclaw-1.7.4/./claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,libdxfrw,all,PKGBUG: uninit,,"/builddir/build/BUILD/libdxfrw-1.1.0-build/libdxfrw-d73a25c61fa6b7f41000b38b4b4c8b32ed4e2fd1/src/intern/dwgbuffer.cpp:199:18: error: ‘buffer’ may be used uninitialized [-Werror=maybe-uninitialized]"
+1,liberation-circuit,all,Ignore: infra_issue,
+1,libetonyek,all,Inspect: compile error,,"/usr/include/mdds-3.0/mdds/global.hpp:161:47: error: 'bool_constant' is not a member of 'std'"
+1,libewf,all,Ignore: infra_issue,
+1,libextractor,all,Ignore: gcc15-fail,
+1,libexttextcat,all,Ignore: infra_issue,
+1,libfabric,all,Inspect: build,
+1,libfaketime,all,PKGBUG: unused,,"libmallocintercept.c:79:12: error: variable ‘ptr2’ set but not used [-Werror=unused-but-set-variable=]"
+1,libffado,all,Ignore: infra_issue,
+1,libformfactor,all,Ignore: infra_issue,
+1,libgcrypt,all,Ignore: gcc15-fail,
+1,libgda,all,Ignore: gcc15-fail,
+1,libghemical,all,Ignore: infra_issue,
+1,libglvnd,all,Inspect: build,
+1,libieee1284,all,Inspect: build,
+1,libirc,all,Ignore: excluded_arch,
+1,libixion,all,Inspect: compile error,,"../../include/ixion/types.hpp:286:22: error: ‘string_view’ in namespace ‘std’ does not name a type"
+1,libkdumpfile,all,Inspect: check,
+1,libkkc,all,Inspect: compile error,,"/usr/include/marisa/key.h:21:21: error: 'std::string_view' has not been declared"
+1,liblas,all,Ignore: gcc15-fail,
+1,liblo,all,PKGBUG: c23 str const,,"address.c:560:5: error: passing argument 4 of '__assert_fail' discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,libmamba,all,Inspect: compile error,,"/builddir/build/BUILD/libmamba-2.4.0-build/mamba-2.4.0/libmamba/include/mamba/util/random.hpp:50:53: error: ‘ref’ is not a member of ‘std’; did you mean ‘erf’? [-Wtemplate-body]"
+1,libmawk,all,PKGBUG: c type,,"num_double.c:41:16: error: conflicting types for ‘modf’; have ‘double(void)’"
+1,libmml,all,Ignore: buildroot_issue,
+1,libmodulemd,all,Ignore: gcc15-fail,
+1,libmongocrypt,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/libmongocrypt-1.15.2-build/libmongocrypt-1.15.2/kms-message/test/test_kms_request.c:1122:9: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,liboauth2,all,PKGBUG: c23 str const,,"src/jose.c:1003:11: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,libodiosacd,all,Ignore: gcc15-fail,
+1,libofx,all,Inspect: compile error,,"/builddir/build/BUILD/libofx-0.10.9-build/libofx-0.10.9/lib/tree.hh:836:35: error: no matching function for call to ‘std::allocator<tree_node_<OfxGenericContainer*> >::allocate(int, int)’"
+1,liborc,all,Ignore: excluded_arch,
+1,liborcus,all,Inspect: compile error,,"../../include/orcus/spreadsheet/types.hpp:787:72: error: ‘string_view’ is not a member of ‘std’"
+1,libpeas1,all,Ignore: gcc15-fail,
+1,libpfm,all,PKGBUG: unused,,"pfmlib_common.c:1912:19: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
+1,libpkgmanifest,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_iterator.h:1111:16: error: array subscript 2 is outside array bounds of ‘const char32_t[1]’ [-Werror=array-bounds=]"
+1,libplacebo,all,Ignore: infra_issue,
+1,libpsm2,all,PKGBUG: unused,,"/builddir/build/BUILD/libpsm2-12.0.1-build/opa-psm2-PSM2_12.0.1/psm_mpool.c:438:16: error: variable ‘nbytes’ set but not used [-Werror=unused-but-set-variable=]"
+1,libqalculate,all,Inspect: compile error,,"/usr/include/unicode/localpointer.h:561:26: error: parameter declared 'auto'"
+1,libquotient,all,Ignore: infra_issue,
+1,libratbag,all,Ignore: infra_issue,
+1,librealsense,all,Inspect: compile error,,"/builddir/build/BUILD/librealsense-2.56.5-build/librealsense-2.56.5/common/device-model.h:188:58: error: no matching function for call to ‘rs2::textual_icon::textual_icon(<brace-enclosed initializer list>)’"
+1,libreoffice,all,Ignore: buildroot_issue,
+1,librepo,all,Ignore: buildroot_issue,
+1,libreswan,all,PKGBUG: unused,,"ikev2_proposals.c:443:46: error: variable ‘local_proposal’ set but not used [-Werror=unused-but-set-variable=]"
+1,libretro-stella2014,all,Ignore: infra_issue,
+1,librist,all,PKGBUG: c23 str const,,"../src/rist-common.c:50:15: error: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]"
+1,libsafec,all,PKGBUG: unused,,"extstr/strpbrk_s.c:82:13: error: variable 'len' set but not used [-Werror=unused-but-set-variable=]"
+1,libsoup3,all,Inspect: check,
+1,libtorrent,all,Ignore: infra_issue,
+1,libtpcimgio,all,Ignore: gcc15-fail,
+1,libtpms,all,PKGBUG: c23 str const,,"tpm_library.c:441:11: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,libunifex,all,Ignore: excluded_arch,
+1,libunwind,all,Inspect: check,
+1,libusbmuxd,all,Ignore: infra_issue,
+1,libvarlink,all,Ignore: gcc15-fail,
+1,libvisio,all,Inspect: compile error,,"/usr/include/unicode/localpointer.h:561:26: error: parameter declared 'auto'"
+1,libvma,all,Inspect: compile error,,"../../src/vma/util/vma_stats.h:142:16: error: anonymous non-C-compatible type given name for linkage purposes by 'typedef' declaration [-Werror=non-c-typedef-for-linkage]"
+1,libxcrypt,all,Inspect: check,
+1,libyui,all,Inspect: compile error,,"/builddir/build/BUILD/libyui-4.2.16-build/libyui-4.2.16/libyui-ncurses/src/NCtext.cc:348:34: error: use of deleted function ‘std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t) [with _Traits = char_traits<char>]’"
+1,libyui-mga-ncurses,all,Inspect: compile error,,"/builddir/build/BUILD/libyui-mga-ncurses-1.2.0-build/libyui-mga-ncurses-1.2.0/src/NCMenu.cc:125:98: error: use of deleted function ‘std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t) [with _Traits = char_traits<char>]’"
+1,libzypp,all,Ignore: buildroot_issue,
+1,links,all,PKGBUG: c23 str const,,"ftp.c:771:99: error: assignment of read-only location ‘*(const char *)strchr((const char *)ud, 1)’"
+1,linux-sgx,all,Inspect: compile error,,"trts_veh.cpp:200:90: error: ‘regparm’ attribute ignored [-Werror=attributes]"
+1,liquid-dsp,all,Ignore: excluded_arch,
+1,lis,all,PKGBUG: proto mismatch,,"../../../src/precon/lis_precon.c:344:19: error: too many arguments to function ‘(void (*)(void))f_clear_matrix_ptr’; expected 0, have 1"
+1,lld13,all,PKGBUG: includes,,"/usr/lib64/llvm13/include/llvm/ADT/SmallVector.h:92:69: error: ‘uint64_t’ was not declared in this scope"
+1,llmnrd,all,Ignore: packaging,
+1,llvm11,all,PKGBUG: includes,,"/builddir/build/BUILD/llvm11-11.1.0-build/llvm-11.1.0.src/lib/Target/X86/MCTargetDesc/X86MCTargetDesc.h:108:41: error: ‘uint32_t’ has not been declared"
+1,llvm12,all,PKGBUG: includes,,"/builddir/build/BUILD/llvm12-12.0.1-build/llvm-12.0.1.src/lib/Target/AMDGPU/MCTargetDesc/AMDGPUMCTargetDesc.h:53:43: error: ‘uint8_t’ has not been declared"
+1,llvm20,all,Inspect: compile error,,"/builddir/build/BUILD/llvm20-20.1.8-build/llvm-project-20.1.8.src/lld/test/ELF/compressed-debug-level.test:21:11: error: LEVEL1: expected string not found in input"
+1,louvre,all,PKGBUG: includes,,"../lib/core/private/LCompositorPrivate.h:86:10: error: ‘mutex’ in namespace ‘std’ does not name a type"
+1,lterm,all,Ignore: pkgfail_install,
+1,lutok,all,Ignore: infra_issue,
+1,lxc,all,PKGBUG: c type,,"../src/lxc/open_utils.h:80:19: error: conflicting types for ‘openat2’; have ‘int(int,  const char *, struct open_how *, size_t)’ {aka ‘int(int,  const char *, struct open_how *, long unsigned int)’}"
+1,lxpanel,all,Ignore: infra_issue,
+1,lxqt-qtplugin,all,Ignore: infra_issue,
+1,lyx,all,Ignore: gcc15-fail,
+1,m4,all,Ignore: gcc15-fail,
+1,magic_enum,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_iterator.h:1111:16: error: array subscript 2 is outside array bounds of ‘const char32_t[1]’ [-Werror=array-bounds=]"
+1,mail-notification,all,PKGBUG: c23 str const,,"jbsrc/lib/src/core/jb-main.c:36:5: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,mangohud,all,Inspect: compile error,,"../src/gpu_fdinfo.cpp:287:27: error: aggregate ‘std::stringstream ss’ has incomplete type and cannot be defined"
+1,manifold,all,Ignore: buildroot_issue,
+1,mathic,all,Inspect: build,
+1,mathicgb,all,Inspect: build,
+1,Mayavi,all,Ignore: gcc15-fail,
+1,mbuffer,all,Ignore: gcc15-fail,
+1,mcrouter,all,PKGBUG: includes,,"Compression.h:53:3: error: ‘uint32_t’ does not name a type"
+1,mdadm,all,PKGBUG: unused,,"Assemble.c:1410:55: error: variable ‘replcnt’ set but not used [-Werror=unused-but-set-variable=]"
+1,mdbtools,all,PKGBUG: unused,,"parser.c:1035:9: error: variable 'yynerrs' set but not used [-Werror=unused-but-set-variable=]"
+1,mdds,all,Inspect: compile error,,"../../include/mdds/./multi_type_vector/soa/../../global.hpp:161:47: error: ‘bool_constant’ is not a member of ‘std’"
+1,memkind,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,memstomp,all,PKGBUG: c type,,"memstomp.c:693:7: error: expected identifier or ‘(’ before ‘_Generic’"
+1,memtailor,all,Inspect: build,
+1,merkuro,all,Ignore: buildroot_issue,
+1,meson,all,Ignore: buildroot_issue,
+1,mine_detector,all,Ignore: buildroot_issue,
+1,mingw-gcc,all,GCC_DERIVATIVE,,"../../libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
+1,mingw-gstreamer1-plugins-bad-free,all,Ignore: gcc15-fail,
+1,mingw-gtk3,all,Ignore: infra_issue,
+1,mingw-json-glib,all,Ignore: infra_issue,
+1,mingw-llvm,all,Ignore: excluded_arch,
+1,mingw-numpy,all,Inspect: compile error,,"../numpy/_core/src/npysort/x86-simd-sort/src/xss-common-comparators.hpp:43:32: error: inlining failed in call to ‘always_inline’ ‘STDSortComparator’: target specific option mismatch"
+1,mingw-qt5-qttools,all,Ignore: infra_issue,
+1,mir,all,Inspect: compile error,,"/builddir/build/BUILD/mir-2.25.1-build/mir-2.25.1/include/common/mir/dispatch/dispatchable.h:27:14: error: found ‘:’ in nested-name-specifier, expected ‘::’"
+1,miracle-wm,all,Ignore: buildroot_issue,
+1,miriway,all,PKGBUG: includes,,"/builddir/build/BUILD/miriway-25.12-build/Miriway-25.12/miriway_child_control.cpp:96:14: error: ‘mutex’ in namespace ‘std’ does not name a type"
+1,mirrormagic,all,PKGBUG: proto mismatch,,"mm_game.c:4326:3: error: too many arguments to function ‘RedrawPlayfield_MM’; expected 0, have 1"
+1,mISDN,all,PKGBUG: c23 str const,,"logger.c:1761:12: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,mk-configure,all,Ignore: gcc15-fail,
+1,mlpack,all,Ignore: excluded_arch,
+1,mlt,all,Ignore: buildroot_issue,
+1,mod_mapcache,all,Ignore: excluded_arch,
+1,mod_xsendfile,all,Ignore: infra_issue,
+1,mold,all,Inspect: check,
+1,mongo-c-driver,all,Ignore: gcc15-fail,
+1,mpsolve,all,Inspect: compile error,,"/usr/include/octave-10.3.0/octave/../octave/Array-fwd.h:34:45: error: ‘pmr’ in namespace ‘std’ does not name a type"
+1,mrchem,all,Ignore: excluded_arch,
+1,mt-st,all,Ignore: infra_issue,
+1,mumble,all,Ignore: infra_issue,
+1,mvfst,all,Ignore: gcc15-fail,
+1,myproxy,all,Ignore: infra_issue,
+1,mysql-connector-odbc,all,Ignore: buildroot_issue,
+1,mysql-connector-python,all,Ignore: buildroot_issue,
+1,n2n,all,Ignore: packaging,
+1,nas,all,Ignore: pkgfail_install,
+1,nbdkit,all,Inspect: compile error,,"/usr/include/libtorrent/aux_/container_wrapper.hpp:64:17: error: 'decltype(auto)' type specifier only available with '-std=c++14' or '-std=gnu++14' [-Wtemplate-body]"
+1,ncmpcpp,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:21: error: no match for call to ‘(LocaleBasedSorting) (boost::iterators::detail::operator_brackets_result<boost::iterators::transform_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item::ExtractValue<Const::No>, __gnu_cxx::__normal_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item*, std::vector<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item, std::allocator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item> > >, boost::use_default, boost::use_default>, RunnableItem<std::__cxx11::basic_string<char>, void()>, RunnableItem<std::__cxx11::basic_string<char>, void()>&>::type, boost::iterators::detail::operator_brackets_result<boost::iterators::transform_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item::ExtractValue<Const::No>, __gnu_cxx::__normal_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item*, std::vector<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item, std::allocator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item> > >, boost::use_default, boost::use_default>, RunnableItem<std::__cxx11::basic_string<char>, void()>, RunnableItem<std::__cxx11::basic_string<char>, void()>&>::type)’"
+1,NearTree,all,Ignore: gcc15-fail,
+1,neomutt,all,Ignore: buildroot_issue,
+1,neovim-qt,all,Ignore: gcc15-fail,
+1,nest,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:21: error: no match for call to ‘(std::less<boost::tuples::tuple<nest::Source, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> >) (boost::iterators::detail::operator_brackets_result<IteratorPair<bv_iterator<nest::Source, nest::Source&, nest::Source*>, bv_iterator<nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>&, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>*> >, boost::tuples::tuple<nest::Source, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type>, boost::tuples::tuple<nest::Source&, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>&, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> >::type, boost::iterators::detail::operator_brackets_result<IteratorPair<bv_iterator<nest::Source, nest::Source&, nest::Source*>, bv_iterator<nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>&, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>*> >, boost::tuples::tuple<nest::Source, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type>, boost::tuples::tuple<nest::Source&, nest::bernoulli_synapse<nest::TargetIdentifierPtrRport>&, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> >::type)’"
+1,netgen-mesher,all,Ignore: gcc15-fail,
+1,netplan,all,Ignore: gcc15-fail,
+1,newlisp,all,PKGBUG: proto mismatch,,"nl-import.c:260:22: error: too many arguments to function ‘function’; expected 0, have 1"
+1,newsbeuter,all,Ignore: gcc15-fail,
+1,nexus,all,Inspect: compile error,,"/builddir/build/BUILD/nexus-4.4.3-build/code-4.4.3/applications/NXtranslate/text_collist/../tree.hh:712:36: error: no matching function for call to ‘std::allocator<tree_node_<Node> >::allocate(int, int)’"
+1,nip2,all,Inspect: compile error,,"filesel.c:487:9: error: void value not ignored as it ought to be"
+1,nodejs22,all,Ignore: gcc15-fail,
+1,nodejs24,all,Ignore: gcc15-fail,
+1,nogravity,all,PKGBUG: proto mismatch,,"../../src/lt_menu.c:1757:9: error: too many arguments to function ‘NG_SetLanguage’; expected 0, have 1"
+1,nordugrid-arc,all,Ignore: gcc15-fail,
+1,nss,all,Ignore: infra_issue,
+1,numpy,all,Inspect: compile error,,"  ../numpy/_core/src/npysort/x86-simd-sort/src/xss-common-comparators.hpp:43:32: error: inlining failed in call to ‘always_inline’ ‘STDSortComparator’: target specific option mismatch"
+1,observable,all,PKGBUG: unused,,"/builddir/build/BUILD/observable-0-build/observable-ae3a59cc65c1cb65d27827adc4c1ef5a37298cb7/tests/src/detail/collection.cpp:201:14: error: variable ‘ref_sum’ set but not used [-Werror=unused-but-set-variable=]"
+1,octave-dicom,all,Inspect: compile error,,"dicomdict.cpp:335:21: error: ‘load_path’ has not been declared"
+1,odhcp6c,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/odhcp6c-0-build/odhcp6c-96d9e0b6e81330c61c954c6bc73a2302276fcda1/src/odhcp6c.c:1032:21: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,odio-sacd,all,Inspect: build,
+1,ogre,all,Inspect: compile error,,"/builddir/build/BUILD/ogre-1.9.0-build/ogre-1.9.0/OgreMain/include/OgreMemorySTLAllocator.h:126:56: error: ‘const_pointer’ in ‘class std::allocator<void>’ does not name a type [-Wtemplate-body]"
+1,olive,all,Ignore: buildroot_issue,
+1,ollama,all,Ignore: buildroot_issue,
+1,onnx,all,Ignore: gcc15-fail,
+1,onnxruntime,all,Ignore: gcc15-fail,
+1,oomd,all,Ignore: excluded_arch,
+1,opal,all,PKGBUG: proto mismatch,,"./src/lpcini.c:281:9: error: too many arguments to function ‘malloc’; expected 0, have 1"
+1,openbios,all,Ignore: gcc15-fail,
+1,OpenColorIO,all,Ignore: excluded_arch,
+1,openigtlink,all,Ignore: infra_issue,
+1,OpenImageIO,all,Ignore: buildroot_issue,
+1,openmeeg,all,Ignore: gcc15-fail,
+1,openmpi,all,Inspect: compile error,,"../../../../ompi/mca/part/persist/part_persist.h:484:1: error: inlining failed in call to ‘always_inline’ ‘mca_part_persist_start’: --param max-inline-insns-single limit reached"
+1,openms,all,Ignore: gcc15-fail,
+1,openocd,all,Ignore: gcc15-fail,
+1,openssh,all,Ignore: buildroot_issue,
+1,openssl-gost-engine,all,Ignore: buildroot_issue,
+1,openssl-ibmca,all,Ignore: buildroot_issue,
+1,openssl-pkcs11-sign-provider,all,Ignore: buildroot_issue,
+1,opensubdiv,all,Ignore: buildroot_issue,
+1,opensurge,all,Ignore: buildroot_issue,
+1,opentoonz,all,Ignore: infra_issue,
+1,opentrep,all,Ignore: buildroot_issue,
+1,openttd,all,ICE,,/builddir/build/BUILD/openttd-15.0-build/openttd-15.0-beta2/src/3rdparty/squirrel/squirrel/squtils.h:53:14: internal compiler error: in expand_fn_using_insn, at internal-fn.cc:270
+1,openttd-opengfx,all,Ignore: gcc15-fail,
+1,opentype-sanitizer,all,Ignore: buildroot_issue,
+1,openvdb,all,Ignore: buildroot_issue,
+1,open-vmdk,all,Ignore: infra_issue,
+1,open-vm-tools,all,PKGBUG: c23 str const,,"hgfsEscape.c:201:15: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,openvpn,all,Ignore: infra_issue,
+1,openvpn-auth-ldap,all,Ignore: buildroot_issue,
+1,openvpn-otp,all,Ignore: buildroot_issue,
+1,openvr,all,Ignore: buildroot_issue,
+1,openvswitch,all,Ignore: buildroot_issue,
+1,openwsman,all,Ignore: buildroot_issue,
+1,openxr,all,Ignore: buildroot_issue,
+1,openxr-explorer,all,Ignore: buildroot_issue,
+1,openxr-simple-playground,all,Ignore: buildroot_issue,
+1,openzwave,all,Ignore: buildroot_issue,
+1,optiimage,all,Ignore: buildroot_issue,
+1,optional-lite,all,Ignore: buildroot_issue,
+1,optipng,all,Ignore: buildroot_issue,
+1,opus,all,Ignore: buildroot_issue,
+1,opusfile,all,Ignore: buildroot_issue,
+1,opustags,all,Ignore: buildroot_issue,
+1,opus-tools,all,Ignore: buildroot_issue,
+1,oqsprovider,all,Ignore: gcc15-fail,
+1,orafce,all,Ignore: gcc15-fail,
+1,orage,all,Ignore: buildroot_issue,
+1,orangefs,all,Ignore: buildroot_issue,
+1,orc,all,Ignore: buildroot_issue,
+1,orsa,all,Ignore: buildroot_issue,
+1,os-autoinst,all,Inspect: check,
+1,oscillatord,all,Ignore: buildroot_issue,
+1,osinfo-db-tools,all,Ignore: buildroot_issue,
+1,osm2pgsql,all,Ignore: buildroot_issue,
+1,osmctools,all,Ignore: buildroot_issue,
+1,osmium-tool,all,Ignore: buildroot_issue,
+1,osmo,all,PKGBUG: proto mismatch,,"calendar_notes.c:79:30: error: too many arguments to function ‘cnfunc’; expected 0, have 2"
+1,osmo-fl2k,all,Ignore: buildroot_issue,
+1,osmpbf,all,Ignore: buildroot_issue,
+1,os-prober,all,Ignore: buildroot_issue,
+1,osslsigncode,all,Ignore: excluded_arch,
+1,ostrichriders,all,Ignore: buildroot_issue,
+1,osu-micro-benchmarks,all,Ignore: buildroot_issue,
+1,otf2,all,Ignore: excluded_arch,
+1,otf2bdf,all,Ignore: buildroot_issue,
+1,overgod,all,Ignore: buildroot_issue,
+1,overlayfs-tools,all,Ignore: buildroot_issue,
+1,ovn,all,Ignore: buildroot_issue,
+1,oxygen-gtk2,all,Ignore: buildroot_issue,
+1,p0f,all,Ignore: buildroot_issue,
+1,p11-kit,all,Ignore: buildroot_issue,
+1,p11-remote,all,Ignore: buildroot_issue,
+1,p7zip,all,Ignore: buildroot_issue,
+1,pacemaker,all,Ignore: buildroot_issue,
+1,pachi,all,Ignore: buildroot_issue,
+1,packetdrill,all,Ignore: buildroot_issue,
+1,packETH,all,Ignore: buildroot_issue,
+1,packmol,all,Ignore: buildroot_issue,
+1,pacman,all,Ignore: buildroot_issue,
+1,pacrunner,all,Ignore: buildroot_issue,
+1,pads,all,Ignore: buildroot_issue,
+1,padthv1,all,Ignore: gcc15-fail,
+1,pagmo2,all,Ignore: gcc15-fail,
+1,paho-c,all,Ignore: buildroot_issue,
+1,paho-cpp,all,Ignore: buildroot_issue,
+1,pal,all,Ignore: gcc15-fail,
+1,palp,all,Ignore: buildroot_issue,
+1,pam,all,Ignore: buildroot_issue,
+1,pam_2fa,all,Ignore: buildroot_issue,
+1,pam_abl,all,Ignore: buildroot_issue,
+1,pam_afs_session,all,Ignore: buildroot_issue,
+1,pam-cryptsetup,all,Ignore: buildroot_issue,
+1,pamix,all,Ignore: buildroot_issue,
+1,pamixer,all,Ignore: buildroot_issue,
+1,pam_krb5,all,Ignore: buildroot_issue,
+1,pam_mount,all,Ignore: buildroot_issue,
+1,pam_mysql,all,Ignore: buildroot_issue,
+1,pam_radius,all,Ignore: buildroot_issue,
+1,pam-ssh-auth-info,all,Ignore: buildroot_issue,
+1,pamtester,all,Ignore: buildroot_issue,
+1,pam-u2f,all,Ignore: buildroot_issue,
+1,pam_url,all,Ignore: buildroot_issue,
+1,pam_wrapper,all,Ignore: buildroot_issue,
+1,pam_yubico,all,Ignore: buildroot_issue,
+1,pango,all,Ignore: buildroot_issue,
+1,pangomm,all,Ignore: buildroot_issue,
+1,panoglview,all,Ignore: buildroot_issue,
+1,paperkey,all,Ignore: buildroot_issue,
+1,papers,all,Ignore: buildroot_issue,
+1,papilo,all,Ignore: buildroot_issue,
+1,pappl,all,Ignore: buildroot_issue,
+1,pappl-retrofit,all,Ignore: buildroot_issue,
+1,paprefs,all,Ignore: buildroot_issue,
+1,paps,all,Inspect: compile error,,"format_from_dict.h:30:23: error: ‘variant’ in namespace ‘std’ does not name a template type"
+1,par,all,Ignore: buildroot_issue,
+1,par2cmdline,all,Ignore: buildroot_issue,
+1,pari,all,Ignore: buildroot_issue,
+1,parlaylib,all,Ignore: excluded_arch,
+1,parole,all,Ignore: buildroot_issue,
+1,parsertl17,all,Ignore: buildroot_issue,
+1,partclone,all,Ignore: buildroot_issue,
+1,parted,all,Ignore: buildroot_issue,
+1,partio,all,Ignore: buildroot_issue,
+1,parzip,all,Ignore: buildroot_issue,
+1,passim,all,Ignore: buildroot_issue,
+1,passt,all,Ignore: buildroot_issue,
+1,passwdqc,all,Ignore: buildroot_issue,
+1,pasystray,all,Ignore: buildroot_issue,
+1,patch,all,Ignore: buildroot_issue,
+1,patchelf,all,Ignore: buildroot_issue,
+1,patchutils,all,PKGBUG: c type,,"./stdlib.h:807:20: error: expected identifier or ‘(’ before ‘_Generic’"
+1,pavucontrol,all,Ignore: buildroot_issue,
+1,pavucontrol-qt,all,Ignore: buildroot_issue,
+1,pavumeter,all,Ignore: buildroot_issue,
+1,pax,all,Ignore: buildroot_issue,
+1,pax-utils,all,Ignore: buildroot_issue,
+1,pbzip2,all,Ignore: buildroot_issue,
+1,pcapy,all,Ignore: buildroot_issue,
+1,pcaudiolib,all,Ignore: buildroot_issue,
+1,pcb,all,Ignore: buildroot_issue,
+1,pcem,all,PKGBUG: proto mismatch,,"disc.c:286:17: error: too many arguments to function ‘drives[drive].stop’; expected 0, have 1"
+1,pcg-cpp,all,Ignore: buildroot_issue,
+1,pciutils,all,Inspect: build,
+1,pcmanfm,all,Ignore: buildroot_issue,
+1,pcmanfm-qt,all,Ignore: buildroot_issue,
+1,pcmanx-gtk2,all,Ignore: buildroot_issue,
+1,pcp,all,Ignore: buildroot_issue,
+1,pcre,all,Ignore: buildroot_issue,
+1,pcre2,all,Ignore: buildroot_issue,
+1,pcsc-cyberjack,all,Ignore: buildroot_issue,
+1,pcsc-lite,all,Ignore: buildroot_issue,
+1,pcsc-lite-acsccid,all,Ignore: buildroot_issue,
+1,pcsc-lite-asekey,all,Ignore: buildroot_issue,
+1,pcsc-lite-ccid,all,Ignore: buildroot_issue,
+1,pcsc-perl,all,Ignore: buildroot_issue,
+1,pcsc-tools,all,Ignore: buildroot_issue,
+1,pdf2djvu,all,Ignore: buildroot_issue,
+1,pdf2svg,all,Ignore: buildroot_issue,
+1,pdfcrack,all,Ignore: buildroot_issue,
+1,pdfgrep,all,Ignore: buildroot_issue,
+1,pdfmixtool,all,Ignore: buildroot_issue,
+1,pdfpc,all,Ignore: buildroot_issue,
+1,pdfresurrect,all,Ignore: buildroot_issue,
+1,pdfsign,all,Ignore: buildroot_issue,
+1,pdns,all,Ignore: buildroot_issue,
+1,pdns-recursor,all,Ignore: pkgfail_install,
+1,pdqsort,all,Ignore: buildroot_issue,
+1,pe-bear,all,Ignore: infra_issue,
+1,PEGTL,all,Ignore: infra_issue,
+1,pekwm,all,Ignore: buildroot_issue,
+1,penguin-command,all,Ignore: buildroot_issue,
+1,percolator,all,Ignore: buildroot_issue,
+1,perfetto,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_construct.h:166:7: error: array subscript ‘struct mutex[0]’ is partly outside array bounds of ‘unsigned char[24]’ [-Werror=array-bounds=]"
+1,perftest,all,Ignore: buildroot_issue,
+1,perl,all,Ignore: buildroot_issue,
+1,perl-Acme-Alien-DontPanic,all,Ignore: buildroot_issue,
+1,perl-Acme-Alien-DontPanic2,all,Ignore: buildroot_issue,
+1,perl-Acme-Damn,all,Ignore: buildroot_issue,
+1,perl-AI-DecisionTree,all,Ignore: buildroot_issue,
+1,perl-Algorithm-BloomFilter,all,Ignore: buildroot_issue,
+1,perl-Algorithm-Combinatorics,all,Ignore: buildroot_issue,
+1,perl-Algorithm-Diff-XS,all,Ignore: buildroot_issue,
+1,perl-Algorithm-FastPermute,all,Ignore: buildroot_issue,
+1,perl-Algorithm-SVM,all,Ignore: buildroot_issue,
+1,perl-Alien-Build,all,Ignore: buildroot_issue,
+1,perl-Alien-libmaxminddb,all,Ignore: buildroot_issue,
+1,perl-Alien-SDL,all,Ignore: buildroot_issue,
+1,perl-Alien-wxWidgets,all,Ignore: buildroot_issue,
+1,perl-AnyEvent-XSPromises,all,Ignore: buildroot_issue,
+1,perl-App-a2p,all,Ignore: buildroot_issue,
+1,perl-Array-Base,all,Ignore: buildroot_issue,
+1,perl-Array-RefElem,all,Ignore: buildroot_issue,
+1,perl-Authen-DecHpwd,all,Ignore: buildroot_issue,
+1,perl-Authen-PAM,all,Ignore: buildroot_issue,
+1,perl-B-Compiling,all,Ignore: buildroot_issue,
+1,perl-B-COW,all,Ignore: buildroot_issue,
+1,perl-BDB,all,Ignore: buildroot_issue,
+1,perl-BerkeleyDB,all,Ignore: buildroot_issue,
+1,perl-B-Generate,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-AtRuntime,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-EndOfScope,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-OP-Annotation,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-OP-Check,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-OP-Check-EntersubForCV,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-OP-Check-StashChange,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-OP-PPAddr,all,Ignore: buildroot_issue,
+1,perl-B-Hooks-Parser,all,Ignore: buildroot_issue,
+1,perl-Bit-Vector,all,Ignore: buildroot_issue,
+1,perl-Boost-Geometry-Utils,all,Ignore: buildroot_issue,
+1,perl-BSD-Resource,all,Ignore: buildroot_issue,
+1,perl-BSSolv,all,Ignore: buildroot_issue,
+1,perl-B-Utils,all,Ignore: buildroot_issue,
+1,perl-CBOR-XS,all,Ignore: buildroot_issue,
+1,perl-CDB_File,all,Ignore: buildroot_issue,
+1,perl-Crypt-MySQL,all,Ignore: buildroot_issue,
+1,perl-DBD-MySQL,all,Ignore: buildroot_issue,
+1,perl-DBD-Pg,all,Inspect: check,
+1,perl-LMDB_File,all,Ignore: excluded_arch,
+1,perl-re-engine-PCRE,all,Inspect: check,
+1,perl-Verilog-Perl,all,Inspect: build,
+1,perl-Wx-GLCanvas,all,Ignore: buildroot_issue,
+1,pesign,all,PKGBUG: c23 str const,,"pesum.c:144:29: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,pgadmin4,all,Ignore: excluded_arch,
+1,pg_auto_failover,all,Ignore: gcc15-fail,
+1,pgpdump,all,PKGBUG: incompat ptr,,"packet.c:95:9: error: initialization of ‘void (*)(void)’ from incompatible pointer type ‘void (*)(int)’ [-Wincompatible-pointer-types]"
+1,phoc,all,Ignore: excluded_arch,
+1,phosh,all,Inspect: check,
+1,phosh-mobile-settings,all,Ignore: gcc15-fail,
+1,pidgin-sipe,all,PKGBUG: c23 str const,,"sipmsg.c:799:13: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,pigz,all,Ignore: infra_issue,
+1,pimd,all,Ignore: packaging,
+1,pinentry,all,Inspect: build,
+1,plasma-pass,all,Ignore: buildroot_issue,
+1,plasma-smart-video-wallpaper-reborn,all,Ignore: pkgfail_install,
+1,plee-the-bear,all,Inspect: compile error,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,plotnetcfg,all,Ignore: packaging,
+1,polybar,all,Ignore: gcc15-fail,
+1,portsentry,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/portsentry-2.0.6-build/portsentry-2.0.6/src/configfile.c:318:12: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,postgresql-pgpool-II,all,PKGBUG: c type,,"../../src/include/pool_type.h:44:14: error: ‘bool’ cannot be defined via ‘typedef’"
+1,powdertoy,all,PKGBUG: includes,,"../src/lua/LuaSocketDefault.cpp:21:31: error: ‘INT_MAX’ was not declared in this scope"
+1,ppl,all,Inspect: build,
+1,prestopalette,all,Ignore: excluded_arch,
+1,procenv,all,PKGBUG: c23 str const,,"procenv.c:3668:15: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,proxmark3,all,Ignore: buildroot_issue,
+1,proxygen,all,Ignore: gcc15-fail,
+1,proxysql,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:70:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,prusa-slicer,all,Ignore: infra_issue,
+1,psacct,all,Ignore: infra_issue,
+1,psi4,all,Ignore: buildroot_issue,
+1,pstoedit,all,Inspect: compile error,,"fillpoly.cpp:113:1: error: body of 'constexpr' function 'constexpr int octant(double, double)' not a return-statement"
+1,ptex,all,Ignore: gcc15-fail,
+1,ptlib,all,Ignore: gcc15-fail,
+1,ptyxis,all,Inspect: build,
+1,pulseaudio,all,Ignore: infra_issue,
+1,pybind11,all,Inspect: check,
+1,pygrib,all,Ignore: buildroot_issue,
+1,PyMca,all,Ignore: gcc15-fail,
+1,pyproj,all,Ignore: gcc15-fail,
+1,PyQt4,all,Ignore: buildroot_issue,
+1,pyqtwebengine,all,Ignore: packaging,
+1,pysvn,all,Ignore: infra_issue,
+1,python-aiohttp,all,Ignore: gcc15-fail,
+1,python-apt,all,Inspect: compile error,,"/usr/include/apt-pkg/macros.h:105:41: error: expected constructor, destructor, or type conversion before ‘;’ token"
+1,python-avocado,all,Ignore: gcc15-fail,
+1,python-basemap,all,Ignore: gcc15-fail,
+1,python-beancount,all,Ignore: gcc15-fail,
+1,python-berkeleydb,all,Ignore: infra_issue,
+1,python-biopython,all,Ignore: gcc15-fail,
+1,python-cartopy,all,Ignore: gcc15-fail,
+1,python-cbor2,all,Ignore: infra_issue,
+1,python-coincurve,all,Ignore: packaging,
+1,python-contourpy,all,Inspect: check,
+1,python-dijitso,all,Ignore: buildroot_issue,
+1,python-distributed,all,Inspect: check,
+1,python-graph-tool,all,Ignore: infra_issue,
+1,python-gsw,all,Ignore: infra_issue,
+1,python-janus-swi,all,Ignore: infra_issue,
+1,python-kadmin,all,Ignore: gcc15-fail,
+1,python-Levenshtein,all,Ignore: gcc15-fail,
+1,python-matplotlib,all,Ignore: gcc15-fail,
+1,python-mplcairo,all,Ignore: gcc15-fail,
+1,python-msgspec,all,Ignore: excluded_arch,
+1,python-nitime,all,Ignore: gcc15-fail,
+1,python-numpoly,all,Ignore: gcc15-fail,
+1,python-psutil,all,Inspect: check,
+1,python-PyMuPDF,all,Ignore: gcc15-fail,
+1,python-pyqt6,all,Inspect: compile error,,"/builddir/build/BUILD/python-pyqt6-6.10.1-build/pyqt6-6.10.1/build/QtCore/sipQtCorecmodule.cpp:8393:32: error: no matching function for call to ‘operator!=(QLocale::Language&, const QLocale&)’"
+1,python-pyqt6-webengine,all,Inspect: compile error,,"/builddir/build/BUILD/python-pyqt6-webengine-6.10.0-build/pyqt6_webengine-6.10.0/build/QtWebEngineCore/sipQtWebEngineCoreQWebEngineFrame.cpp:458:22: error: ‘operator!=’ not defined"
+1,python-pyscf,all,Ignore: gcc15-fail,
+1,python-qcustomplot-pyqt,all,Ignore: packaging,
+1,python-rmtest,all,Ignore: buildroot_issue,
+1,python-steps,all,Inspect: compile error,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
+1,python-symengine,all,Ignore: infra_issue,
+1,python-tkrzw,all,Ignore: excluded_arch,
+1,python-uharfbuzz,all,Ignore: infra_issue,
+1,python-wordcloud,all,Ignore: gcc15-fail,
+1,pythran,all,Ignore: infra_issue,
+1,qaccessibilityclient,all,Ignore: infra_issue,
+1,qatlib,all,Ignore: excluded_arch,
+1,qbs,all,Ignore: excluded_arch,
+1,qcad,all,Ignore: gcc15-fail,
+1,qcoro,all,Ignore: gcc15-fail,
+1,qdmr,all,Ignore: gcc15-fail,
+1,qemu,all,Ignore: infra_issue,
+1,qemu-sanity-check,all,Inspect: build,
+1,qgis,all,Ignore: infra_issue,
+1,qmasterpassword,all,Inspect: compile error,,"/builddir/build/BUILD/qmasterpassword-2.0.3-build/qMasterPassword-2.0.3/redhat-linux-build/qMasterPassword_autogen/6YEA5652QU/../../../include/identicon.h:54:48: error: invalid conversion from ‘const char8_t*’ to ‘const char*’ [-fpermissive]"
+1,qoauth,all,Ignore: buildroot_issue,
+1,qoi,all,Inspect: compile error,,"/usr/include/stb_image.h:1822:28: error: implicit declaration of function ‘stbi__malloc_mad4’; did you mean ‘stbi__malloc_mad3’? [-Wimplicit-function-declaration]"
+1,qownnotes,all,Inspect: build,
+1,qsstv,all,Ignore: buildroot_issue,
+1,qt,all,Inspect: compile error,,"generators/makefile.cpp:3314:19: error: expected unqualified-id before ‘requires’"
+1,qt6-qtquick3d,all,Inspect: ,
+1,qt6-qtscxml,all,ICE,,/builddir/build/BUILD/qt6-qtscxml-6.10.1-build/qtscxml-everywhere-src-6.10.1/src/scxmlqml/eventconnection_p.h:54:10: internal compiler error: in write_type, at cp/mangle.cc:2477
+1,qt6-qtshadertools,all,Inspect: build,
+1,qt6-qtwebengine,all,PKGBUG: includes,,"../../../../../src/3rdparty/chromium/base/strings/to_string.h:87:25: error: ‘uint64_t’ does not name a type [-Wtemplate-body]"
+1,quake3,all,Ignore: buildroot_issue,
+1,quantum-espresso,all,Ignore: gcc15-fail,
+1,quazip,all,Ignore: buildroot_issue,
+1,quisk,all,Ignore: buildroot_issue,
+1,quotatool,all,Ignore: buildroot_issue,
+1,qview,all,Ignore: buildroot_issue,
+1,qwlroots,all,Ignore: buildroot_issue,
+1,qwt5-qt5,all,Ignore: buildroot_issue,
+1,qwtplot3d,all,Ignore: buildroot_issue,
+1,qxmledit,all,PKGBUG: unused,,"element.cpp:1928:9: error: variable ‘index’ set but not used [-Werror=unused-but-set-variable=]"
+1,qxmpp,all,Ignore: buildroot_issue,
+1,qzxing,all,Ignore: buildroot_issue,
+1,rabbitsign,all,Ignore: buildroot_issue,
+1,raceintospace,all,Ignore: buildroot_issue,
+1,radare2,all,Ignore: buildroot_issue,
+1,radcli,all,Ignore: buildroot_issue,
+1,radeontool,all,Ignore: buildroot_issue,
+1,radeontop,all,Ignore: buildroot_issue,
+1,radial,all,Ignore: buildroot_issue,
+1,radiotray-ng,all,Ignore: buildroot_issue,
+1,radsecproxy,all,Ignore: buildroot_issue,
+1,radvd,all,Ignore: buildroot_issue,
+1,raft,all,Ignore: buildroot_issue,
+1,ragel,all,Ignore: buildroot_issue,
+1,raidem,all,Ignore: buildroot_issue,
+1,rakarrack,all,Ignore: buildroot_issue,
+1,rakudo,all,Ignore: buildroot_issue,
+1,ramond,all,Ignore: buildroot_issue,
+1,rancid,all,Ignore: buildroot_issue,
+1,randomx,all,Ignore: buildroot_issue,
+1,rang,all,Ignore: buildroot_issue,
+1,range-v3,all,Ignore: buildroot_issue,
+1,rapidfuzz-cpp,all,Ignore: buildroot_issue,
+1,rapidjson,all,Ignore: buildroot_issue,
+1,rapidsvn,all,Ignore: buildroot_issue,
+1,rapidyaml,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:29: error: no match for ‘operator[]’ (operand types are ‘c4::fs::EntryList::iterator_impl<c4::fs::EntryList>’ and ‘long int’)"
+1,raptor2,all,Ignore: buildroot_issue,
+1,rarian,all,Ignore: buildroot_issue,
+1,rarpd,all,Ignore: buildroot_issue,
+1,rasdaemon,all,Ignore: buildroot_issue,
+1,rasqal,all,Ignore: buildroot_issue,
+1,rasterview,all,Ignore: buildroot_issue,
+1,ratools,all,Ignore: buildroot_issue,
+1,ratpoison,all,Ignore: buildroot_issue,
+1,rats,all,Ignore: buildroot_issue,
+1,rauc,all,Ignore: gcc15-fail,
+1,rawtherapee,all,Ignore: buildroot_issue,
+1,raylib,all,Ignore: buildroot_issue,
+1,rblcheck,all,Ignore: infra_issue,
+1,rbldnsd,all,Ignore: buildroot_issue,
+1,rb_libtorrent,all,Ignore: buildroot_issue,
+1,rc,all,Ignore: buildroot_issue,
+1,rclone-browser,all,Ignore: buildroot_issue,
+1,rcs,all,Ignore: buildroot_issue,
+1,rcssmonitor,all,Inspect: compile error,,"/builddir/build/BUILD/rcssmonitor-19.0.0-build/rcssmonitor-19.0.0/rcss/rcg/simdjson/simdjson.h:6263:13: error: ‘class simdjson::internal::base_formatter<formatter>’ has no member named ‘print_newline’; did you mean ‘call_print_newline’? [-Wtemplate-body]"
+1,rcssserver,all,Ignore: buildroot_issue,
+1,rcssserver3d,all,Ignore: buildroot_issue,
+1,rdfind,all,Ignore: buildroot_issue,
+1,rdiff-backup,all,Ignore: buildroot_issue,
+1,rdma-core,all,Ignore: buildroot_issue,
+1,re2,all,Ignore: buildroot_issue,
+1,re2c,all,Ignore: buildroot_issue,
+1,readline,all,Ignore: buildroot_issue,
+1,readosm,all,Ignore: buildroot_issue,
+1,readstat,all,Ignore: buildroot_issue,
+1,realmd,all,Ignore: buildroot_issue,
+1,realtime-setup,all,Ignore: buildroot_issue,
+1,realtime-tests,all,Ignore: buildroot_issue,
+1,reaver,all,Ignore: buildroot_issue,
+1,recode,all,Ignore: buildroot_issue,
+1,recoll,all,Ignore: buildroot_issue,
+1,recorder,all,Ignore: buildroot_issue,
+1,recutils,all,Ignore: buildroot_issue,
+1,redhat-menus,all,Ignore: buildroot_issue,
+1,redict,all,Ignore: buildroot_issue,
+1,redisx,all,Ignore: buildroot_issue,
+1,redwax-tool,all,Inspect: check,
+1,rEFInd,all,Ignore: gcc15-fail,
+1,rigsync,all,Ignore: buildroot_issue,
+1,rmol,all,Inspect: check,
+1,rocksndiamonds,all,Inspect: build,
+1,rott,all,PKGBUG: c type,,"rt_def.h:330:3: error: cannot use keyword ‘false’ as enumeration constant"
+1,rpld,all,Ignore: packaging,
+1,rpm-git-tag-sort,all,Inspect: ,
+1,rpminspect,all,PKGBUG: c23 str const,,"../lib/files.c:625:9: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,rr,all,Ignore: gcc15-fail,
+1,rshim,all,Inspect: compile error,,"/usr/include/fuse3/fuse_common.h:1155:1: error: static assertion failed: "fuse: off_t must be 64bit""
+1,rsyslog,all,Ignore: infra_issue,
+1,rust-vhost-device-gpu,all,Ignore: gcc15-fail,
+1,sbsigntools,all,PKGBUG: unused,,"image.c:515:20: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
+1,scalasca,all,Ignore: buildroot_issue,
+1,scorep,all,Inspect: compile error,,"../../build-gcc-plugin/../src/adapters/compiler/gcc-plugin/scorep_plugin_gcc_version_compatibility.h:29:25: error: ‘TODO_verify_il’ was not declared in this scope; did you mean ‘TODO_verify_ssa’?"
+1,sdsl-lite,all,PKGBUG: unused,,"/builddir/build/BUILD/sdsl-lite-3.0.3-build/sdsl-lite-bb2eebb2de8a556661c00ba3c5b4c33b7c2c7a25/include/sdsl/enc_vector.hpp:248:20: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable=]"
+1,seqan3,all,PKGBUG: unused,,"/builddir/build/BUILD/seqan3-3.4.0-build/seqan3-3.4.0-rc.3/test/unit/alignment/matrix/detail/simulated_alignment_test_template.hpp:58:12: error: variable ‘step’ set but not used [-Werror=unused-but-set-variable=]"
+1,shim-unsigned-aarch64,all,Ignore: gcc15-fail,
+1,shim-unsigned-x64,all,Ignore: gcc15-fail,
+1,Simple-Fuzzer,all,PKGBUG: unused,,"os-abs.c:695:11: error: variable ‘repls’ set but not used [-Werror=unused-but-set-variable=]"
+1,Singular,all,Inspect: compile error,,"/usr/include/gfanlib/gfanlib_memoryresource.h:45:22: error: 'experimental' in namespace 'std' does not name a type"
+1,slic3r,all,Ignore: infra_issue,
+1,solidity,all,Inspect: build,
+1,spice,all,Inspect: compile error,,"../server/tests/test-display-base.cpp:809:5: error: either all initializer clauses should be designated or none of them should be"
+1,springlobby,all,Ignore: buildroot_issue,
+1,sundials,all,Ignore: buildroot_issue,
+1,tarantool,all,PKGBUG: c type,,"/builddir/build/BUILD/tarantool-2.4.2.68-build/tarantool-2.4.2.68/extra/lemon.c:766:6: error: conflicting types for ‘FindRulePrecedences’; have ‘void(struct lemon *)’"
+1,tboot,all,PKGBUG: unused,,"safeclib/strpbrk_s.c:95:13: error: variable ‘len’ set but not used [-Werror=unused-but-set-variable=]"
+1,thunderbird,all,Ignore: excluded_arch,
+1,trafficserver,all,Inspect: compile error,,"/builddir/build/BUILD/trafficserver-10.1.0-build/trafficserver-10.1.0/include/tsutil/Regex.h:51:24: error: expected ‘)’ before ‘size’"
+1,tvtime,all,Ignore: gcc15-fail,
+1,uboot-tools,all,Inspect: build,
+1,ucx,all,Inspect: compile error,,"perftest.c:236:11: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
+1,usd,all,Ignore: buildroot_issue,
+1,votca,all,Inspect: compile error,,"/builddir/build/BUILD/votca-2025.1-build/votca-2025.1/csg/src/tools/csg_gmxtopol.cc:80:12: error: reference to ‘format’ is ambiguous"
+1,vtk,all,Ignore: infra_issue,
+1,wangle,all,Ignore: gcc15-fail,
+1,wasmedge,all,Inspect: compile error,,"/builddir/build/BUILD/wasmedge-0.15.0-build/wasmedge/include/host/wasi/inode.h:982:7: error: defining ‘WasmEdge::Host::WASI::PollerContext’, which previously failed to be complete in a SFINAE context [-Werror=sfinae-incomplete=]"
+1,wivrn,all,Inspect: compile error,,"/builddir/build/BUILD/wivrn-25.12-build/WiVRn-25.12/dashboard/settings.cpp:544:27: error: ‘::close’ has not been declared; did you mean ‘pclose’?"
+1,xen,all,PKGBUG: c23 str const,,"libxl_internal.c:207:15: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,xtensor-python,all,Inspect: compile error,,"/usr/include/xtensor/utils/xutils.hpp:590:5: error: ‘concept’ does not name a type; did you mean ‘const’?"

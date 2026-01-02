@@ -141,7 +141,7 @@ find_ice() {
 
 	error_line=$(zgrep ":[0-9]\+:[0-9]\+: internal compiler error:" $logfile | head -1)
 	if [ "x$error_line" != "x" ]; then
-		echo "1,$name,all,ICE,,$error_line"
+		echo "1,$name,all,ICE,,\"$error_line\""
 		return 0
 	fi
 	return 1
