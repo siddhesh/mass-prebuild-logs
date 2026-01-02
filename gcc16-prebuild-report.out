@@ -128,7 +128,7 @@
 1,cwdaemon,all,Ignore: pkgfail_install,
 1,cxxtools,all,Inspect: compile error,,"../include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
 1,cyrus-imapd,all,Inspect: compile error,,"/usr/include/unicode/localpointer.h:561:26: error: parameter declared 'auto'"
-1,darktable,all,ICE,,/builddir/build/BUILD/darktable-5.4.0-build/darktable-5.4.0/src/dtgtk/thumbnail.c:2401:1: internal compiler error: Segmentation fault
+1,darktable,all,ICE,,"/builddir/build/BUILD/darktable-5.4.0-build/darktable-5.4.0/src/dtgtk/thumbnail.c:2401:1: internal compiler error: Segmentation fault"
 1,dbcsr,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_algobase.h:425:32: error: argument 1 null where non-null expected because argument 3 is nonzero [-Werror=nonnull]"
 1,dbus-broker,all,Ignore: gcc15-fail,
 1,dbus-test-runner,all,Ignore: infra_issue,
@@ -171,7 +171,7 @@
 1,engauge-digitizer,all,Ignore: infra_issue,
 1,enigma,all,Inspect: compile error,,"main.cc:885:77: error: ‘make_unique’ is not a member of ‘std’"
 1,ensmallen,all,Ignore: infra_issue,
-1,epstool,all,ICE,,./src/cimg.c:191:1: internal compiler error: Segmentation fault
+1,epstool,all,ICE,,"./src/cimg.c:191:1: internal compiler error: Segmentation fault"
 1,ergo,all,Inspect: compile error,,"../../source/utilities_basic/pi.h:57:20: error: expected unqualified-id before numeric constant"
 1,erlang-eleveldb,all,Ignore: gcc15-fail,
 1,erlang-esasl,all,Ignore: gcc15-fail,
@@ -187,7 +187,7 @@
 1,fbthrift,all,Ignore: gcc15-fail,
 1,fcode-utils,all,Ignore: gcc15-fail,
 1,fctxpd,all,PKGBUG: incompat ptr,,"fpin_main.c:132:33: error: passing argument 3 of ‘pthread_create’ from incompatible pointer type [-Wincompatible-pointer-types]"
-1,feather,all,ICE,,/builddir/build/BUILD/feather-2.8.1-build/feather-2.8.1/src/utils/ScopeGuard.h:149:6: internal compiler error: Segmentation fault
+1,feather,all,ICE,,"/builddir/build/BUILD/feather-2.8.1-build/feather-2.8.1/src/utils/ScopeGuard.h:149:6: internal compiler error: Segmentation fault"
 1,fence-agents,all,PKGBUG: c23 str const,,"virt-serial.c:86:20: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,filebench,all,PKGBUG: c type,,"vars.h:223:32: error: two or more data types in declaration specifiers"
 1,firefox,all,Ignore: pkgfail_prep,
@@ -261,7 +261,7 @@
 1,golly,all,Inspect: compile error,,"../cmdline/bgolly.cpp:156:58: error: reference to ‘popcount’ is ambiguous"
 1,gprbuild,all,Ignore: buildroot_issue,
 1,grantlee-qt5,all,Inspect: compile error,,"/builddir/build/BUILD/grantlee-qt5-5.3.1-build/grantlee-5.3.1/redhat-linux-build/templates/defaulttags/grantlee_defaulttags_autogen/EWIEGA46WW/../../../../../templates/defaulttags/cycle.h:43:18: error: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]"
-1,gromacs,all,ICE,,/builddir/build/BUILD/gromacs-2025.4-build/gromacs-2025.4/src/external/scope_guard/scope_guard.h:140:6: internal compiler error: Segmentation fault
+1,gromacs,all,ICE,,"/builddir/build/BUILD/gromacs-2025.4-build/gromacs-2025.4/src/external/scope_guard/scope_guard.h:140:6: internal compiler error: Segmentation fault"
 1,grout,all,Ignore: excluded_arch,
 1,grub2,all,Ignore: infra_issue,
 1,gsequencer,all,Ignore: buildroot_issue,
@@ -523,7 +523,7 @@
 1,opensurge,all,Ignore: buildroot_issue,
 1,opentoonz,all,Ignore: infra_issue,
 1,opentrep,all,Ignore: buildroot_issue,
-1,openttd,all,ICE,,/builddir/build/BUILD/openttd-15.0-build/openttd-15.0-beta2/src/3rdparty/squirrel/squirrel/squtils.h:53:14: internal compiler error: in expand_fn_using_insn, at internal-fn.cc:270
+1,openttd,all,ICE,,"/builddir/build/BUILD/openttd-15.0-build/openttd-15.0-beta2/src/3rdparty/squirrel/squirrel/squtils.h:53:14: internal compiler error: in expand_fn_using_insn, at internal-fn.cc:270"
 1,openttd-opengfx,all,Ignore: gcc15-fail,
 1,opentype-sanitizer,all,Ignore: buildroot_issue,
 1,openvdb,all,Ignore: buildroot_issue,
@@ -815,7 +815,7 @@
 1,qsstv,all,Ignore: buildroot_issue,
 1,qt,all,Inspect: compile error,,"generators/makefile.cpp:3314:19: error: expected unqualified-id before ‘requires’"
 1,qt6-qtquick3d,all,Inspect: ,
-1,qt6-qtscxml,all,ICE,,/builddir/build/BUILD/qt6-qtscxml-6.10.1-build/qtscxml-everywhere-src-6.10.1/src/scxmlqml/eventconnection_p.h:54:10: internal compiler error: in write_type, at cp/mangle.cc:2477
+1,qt6-qtscxml,all,ICE,,"/builddir/build/BUILD/qt6-qtscxml-6.10.1-build/qtscxml-everywhere-src-6.10.1/src/scxmlqml/eventconnection_p.h:54:10: internal compiler error: in write_type, at cp/mangle.cc:2477"
 1,qt6-qtshadertools,all,Inspect: build,
 1,qt6-qtwebengine,all,PKGBUG: includes,,"../../../../../src/3rdparty/chromium/base/strings/to_string.h:87:25: error: ‘uint64_t’ does not name a type [-Wtemplate-body]"
 1,quake3,all,Ignore: buildroot_issue,
@@ -906,6 +906,7 @@
 1,rr,all,Ignore: gcc15-fail,
 1,rshim,all,Inspect: compile error,,"/usr/include/fuse3/fuse_common.h:1155:1: error: static assertion failed: "fuse: off_t must be 64bit""
 1,rsyslog,all,Ignore: infra_issue,
+1,rtmidi,all,Inspect: build,
 1,rust-vhost-device-gpu,all,Ignore: gcc15-fail,
 1,sbsigntools,all,PKGBUG: unused,,"image.c:515:20: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
 1,scalasca,all,Ignore: buildroot_issue,
