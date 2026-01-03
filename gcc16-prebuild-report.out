@@ -1,4 +1,4 @@
-1,389-ds-base,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,389-ds-base,all,PKGBUG: internals,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
 1,4th,all,Ignore: infra_issue,
 1,6tunnel,all,Ignore: infra_issue,
 1,7zip,all,PKGBUG: bounds,,"../../Archive/../Common/ProgressUtils.h:12:3: error: array subscript ‘struct CLocalProgress[0]’ is partly outside array bounds of ‘unsigned char[32]’ [-Werror=array-bounds=]"
@@ -8,18 +8,18 @@
 1,advancecomp,all,Ignore: infra_issue,
 1,airinv,all,Ignore: gcc15-fail,
 1,airrac,all,Ignore: gcc15-fail,
-1,airtsp,all,Inspect: build,
+1,airtsp,all,PKGBUG: make error,,""
 1,alliance,all,Ignore: gcc15-fail,
 1,alsa-tools,all,Ignore: infra_issue,
 1,amarok,all,Inspect: build,
-1,amg4psblas,all,Inspect: build,
+1,amg4psblas,all,PKGBUG: fortran,,"Error: Associate-name ‘pout’ cannot appear in a variable definition context (pointer assignment) at (1) because its target at (2) cannot, either"
 1,amoebax,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_numeric.h:169:29: error: no match for call to ‘(Amoebax::Font::TextWidth) (std::remove_reference<short unsigned int&>::type, const char&)’"
 1,android-tools,all,Ignore: buildroot_issue,
 1,anet,all,Inspect: check,
-1,angband,all,Inspect: build,
+1,angband,all,PKGBUG: assembler,,"/tmp/ccbz5c7C.s:944420: symbol `OBJECT_NULL.lto_priv.0' is already defined"
 1,ann,all,Inspect: compile error,,"ann_test.cpp:620:8: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘char*’)"
 1,anthy,all,Ignore: packaging,
-1,anymeal,all,Inspect: build,
+1,anymeal,all,PKGBUG: configure,,"Failed to find matching components of a complete"
 1,anyterm,all,PKGBUG: c++ type,,"../include/charset/char_t.hh:65:26: error: redeclaration of C++ built-in type ‘char8_t’ [-fpermissive]"
 1,aoetools,all,Ignore: packaging,
 1,apbs,all,Ignore: gcc15-fail,
@@ -35,7 +35,7 @@
 1,arm-compute-library,all,Ignore: excluded_arch,
 1,arm-none-eabi-gcc-cs,all,GCC_DERIVATIVE,,"../../gcc-15.2.0/libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
 1,arm-none-eabi-newlib,all,Ignore: buildroot_issue,
-1,arpack,all,Inspect: build,
+1,arpack,all,PKGBUG: configure,,"Eigen/Sparse not found"
 1,astromenace,all,Ignore: infra_issue,
 1,at,all,Ignore: infra_issue,
 1,atlas,all,Ignore: pkgfail_prep,
@@ -47,7 +47,7 @@
 1,aws,all,Ignore: buildroot_issue,
 1,axel,all,Ignore: gcc15-fail,
 1,bcachefs-tools,all,Ignore: gcc15-fail,
-1,bear-factory,all,Inspect: compile error,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,bear-factory,all,PKGBUG: c++ type,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
 1,bibletime,all,Inspect: compile error,,"/builddir/build/BUILD/bibletime-3.1.1-build/bibletime-3.1.1/redhat-linux-build/bibletime_backend_autogen/ZNV6MPGS4G/../../../src/backend/drivers/../keys/cswordversekey.h:83:46: error: cannot convert ‘std::common_comparison_category_t<std::strong_ordering, std::strong_ordering, std::strong_ordering, std::strong_ordering, std::strong_ordering>’ {aka ‘std::strong_ordering’} to ‘bool’ in return"
 1,bind9-next,all,Inspect: check,
 1,bird,all,Inspect: check,
@@ -67,7 +67,7 @@
 1,btrfs-assistant,all,Ignore: gcc15-fail,
 1,btrfs-efi,all,Ignore: gcc15-fail,
 1,buffer,all,PKGBUG: proto mismatch,,"sem.c:63:1: error: number of arguments doesn’t match prototype"
-1,busybox,all,Inspect: build,
+1,busybox,all,PKGBUG: static libatomic,,""
 1,bwbasic,all,PKGBUG: proto mismatch,,"renum.c:114:11: error: too many arguments to function ‘instr’; expected 0, have 2"
 1,c4fs,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:29: error: no match for ‘operator[]’ (operand types are ‘c4::fs::EntryList::iterator_impl<c4::fs::EntryList>’ and ‘long int’)"
 1,cachelib,all,Ignore: gcc15-fail,
@@ -84,20 +84,20 @@
 1,charliecloud,all,Ignore: pkgfail_install,
 1,chatty,all,Ignore: gcc15-fail,
 1,chicken,all,Ignore: infra_issue,
-1,chkrootkit,all,Inspect: build,
+1,chkrootkit,all,PKGBUG: static libatomic,,""
 1,chordii,all,PKGBUG: proto mismatch,,"chordii.c:636:9: error: number of arguments doesn’t match prototype"
 1,cinnamon-menus,all,Ignore: infra_issue,
 1,civetweb,all,Ignore: infra_issue,
 1,cjdns,all,Ignore: gcc15-fail,
 1,ck,all,Ignore: infra_issue,
 1,clang13,all,PKGBUG: includes,,"/usr/lib64/llvm13/include/llvm/ADT/SmallVector.h:92:69: error: ‘uint64_t’ was not declared in this scope"
-1,clang17,all,PKGBUG: includes,,"/usr/lib64/llvm17/include/llvm/ADT/SmallVector.h:109:62: error: use of undeclared identifier 'uint64_t'"
+1,clang17,all,Inspect: compile error,,"/usr/lib64/llvm17/include/llvm/ADT/SmallVector.h:109:62: error: use of undeclared identifier 'uint64_t'"
 1,clang18,all,Inspect: check,
 1,clap,all,Ignore: infra_issue,
 1,coan,all,Ignore: gcc15-fail,
 1,cockpit,all,Ignore: gcc15-fail,
 1,cocot,all,PKGBUG: incompat ptr,,"sigwinch.c:43:20: error: assignment to ‘__sighandler_t’ {aka ‘void (*)(int)’} from incompatible pointer type ‘void (*)(void)’ [-Wincompatible-pointer-types]"
-1,codeblocks,all,Inspect: compile error,,"/usr/include/astyle.h:301:44: error: 'std::string_view' has not been declared"
+1,codeblocks,all,PKGBUG: c++ std,,"/usr/include/astyle.h:301:44: error: 'std::string_view' has not been declared"
 1,coin-or-lemon,all,Inspect: compile error,,"/builddir/build/BUILD/coin-or-lemon-1.3.1-build/lemon-1.3.1/lemon/bits/array_map.h:320:21: error: ‘lemon::ArrayMap<lemon::DigraphExtender<lemon::ListDigraphBase>, lemon::ListDigraphBase::Node, lemon::dim2::Point<int> >::Allocator’ {aka ‘class std::allocator<lemon::dim2::Point<int> >’} has no member named ‘destroy’"
 1,collada-dom,all,Inspect: compile error,,"/builddir/build/BUILD/collada-dom-2.5.0-build/collada-dom-2.5.0/dom/src/dae/daeMetaElement.cpp:178:26: error: ambiguous overload for ‘operator!=’ (operand types are ‘daeStringRef’ and ‘long int’)"
 1,colorscad,all,Ignore: buildroot_issue,
@@ -106,7 +106,7 @@
 1,compat-guile18,all,Ignore: packaging,
 1,compat-readline6,all,Ignore: gcc15-fail,
 1,composable_kernel,all,Ignore: infra_issue,
-1,condor,all,Inspect: build,
+1,condor,all,PKGBUG: static libatomic,,""
 1,contour-terminal,all,PKGBUG: includes,,"/builddir/build/BUILD/contour-terminal-0.6.1.7494-build/contour-0.6.1.7494/src/crispy/TrieMap.h:67:45: error: ‘uint8_t’ does not name a type [-Wtemplate-body]"
 1,coreutils,all,Ignore: gcc15-fail,
 1,cowpatty,all,PKGBUG: incompat ptr,,"cowpatty.c:1022:24: error: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]"
@@ -116,17 +116,18 @@
 1,cppi,all,Ignore: infra_issue,
 1,CppMicroServices,all,Ignore: gcc15-fail,
 1,cproc,all,PKGBUG: c23 str const,,"pp.c:345:51: error: assignment of read-only location ‘*(const char *)strchr(newloc.file, 34)’"
-1,crest,all,Inspect: build,
+1,crest,all,ICE,,"f951: internal compiler error: insert_bbt(): Duplicate key found"
 1,cross-gcc,all,GCC_DERIVATIVE,,"../../gcc-15.2.1-20250808/libcody/cody.hh:113:24: error: no matching function for call to ‘S2C(const char8_t [2])’"
 1,cryfs,all,Ignore: excluded_arch,
-1,cryptopp,all,Inspect: build,
+1,cryptopp,all,PKGBUG: configure,,"in '/builddir/build/BUILD/cryptopp-8.8.0-build/cryptopp-8.8.0':
+"g++ -std=gnu++11" is not a valid compiler or is not on-path"
 1,cscppc,all,Inspect: build,
-1,csdiff,all,Inspect: build,
+1,csdiff,all,PKGBUG: static libatomic,,""
 1,csnappy,all,Ignore: infra_issue,
 1,cswrap,all,Inspect: build,
 1,cvise,all,Ignore: gcc15-fail,
 1,cwdaemon,all,Ignore: pkgfail_install,
-1,cxxtools,all,Inspect: compile error,,"../include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
+1,cxxtools,all,PKGBUG: internals,,"../include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
 1,cyrus-imapd,all,Inspect: compile error,,"/usr/include/unicode/localpointer.h:561:26: error: parameter declared 'auto'"
 1,darktable,all,ICE,,"/builddir/build/BUILD/darktable-5.4.0-build/darktable-5.4.0/src/dtgtk/thumbnail.c:2401:1: internal compiler error: Segmentation fault"
 1,dbcsr,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_algobase.h:425:32: error: argument 1 null where non-null expected because argument 3 is nonzero [-Werror=nonnull]"
@@ -165,11 +166,11 @@
 1,efifs,all,PKGBUG: unused,,"StringFuncs.c:113:15: error: variable ‘Item’ set but not used [-Werror=unused-but-set-variable=]"
 1,eigen3,all,Ignore: gcc15-fail,
 1,elements-alexandria,all,Inspect: build,
-1,elfutils,all,Inspect: compile error,,"/usr/include/bits/unistd.h:32:10: error: ‘*read’ specified size between 18446744069414588418 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Werror=stringop-overflow=]"
+1,elfutils,all,PKGBUG: bounds,,"/usr/include/bits/unistd.h:32:10: error: ‘*read’ specified size between 18446744069414588418 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Werror=stringop-overflow=]"
 1,embree3,all,Ignore: gcc15-fail,
 1,enet,all,Ignore: infra_issue,
 1,engauge-digitizer,all,Ignore: infra_issue,
-1,enigma,all,Inspect: compile error,,"main.cc:885:77: error: ‘make_unique’ is not a member of ‘std’"
+1,enigma,all,PKGBUG: c++ std,,"main.cc:885:77: error: ‘make_unique’ is not a member of ‘std’"
 1,ensmallen,all,Ignore: infra_issue,
 1,epstool,all,ICE,,"./src/cimg.c:191:1: internal compiler error: Segmentation fault"
 1,ergo,all,Inspect: compile error,,"../../source/utilities_basic/pi.h:57:20: error: expected unqualified-id before numeric constant"
@@ -203,7 +204,7 @@
 1,freedv,all,Ignore: buildroot_issue,
 1,freeopcua,all,Inspect: compile error,,"/builddir/build/BUILD/freeopcua-0-build/freeopcua-bd13aee2455c1d137bee45f7d2aedea8dd30115c/src/server/address_space_internal.cpp:319:24: error: call to consteval function ‘fmt::v11::fstring<unsigned int&>("address_space_internal| request to delete a callback using unknown handle: {1}")’ is not a constant expression"
 1,fritzing,all,Ignore: gcc15-fail,
-1,frr,all,Inspect: compile error,,"/usr/include/absl/base/policy_checks.h:81:2: error: #error "C++ versions less than C++17 are not supported.""
+1,frr,all,PKGBUG: c++ std,,"/usr/include/absl/base/policy_checks.h:81:2: error: #error "C++ versions less than C++17 are not supported.""
 1,fscrypt,all,Ignore: buildroot_issue,
 1,funguloids,all,Ignore: buildroot_issue,
 1,fuse-btfs,all,Ignore: excluded_arch,
@@ -241,7 +242,7 @@
 1,glibd,all,Ignore: buildroot_issue,
 1,glimpse,all,PKGBUG: proto mismatch,,"hash.c:61:1: error: number of arguments doesn’t match prototype"
 1,global,all,PKGBUG: incompat ptr,,"db.c:97:18: error: assignment to ‘int (*)(const struct __db *, const DBT *, u_int)’ {aka ‘int (*)(const struct __db *, const DBT *, unsigned int)’} from incompatible pointer type ‘int (*)(void)’ [-Wincompatible-pointer-types]"
-1,globus-gsi-proxy-core,all,Inspect: build,
+1,globus-gsi-proxy-core,all,PKGBUG: assembler,,"/tmp/cc8N3W5D.s: invalid attempt to declare external version name as default in symbol `globus_gsi_proxy_handle_set_proxy_cert_info@@GLOBUS_GSI_PROXY_CORE_8'"
 1,gloo,all,Ignore: buildroot_issue,
 1,gmic,all,Ignore: infra_issue,
 1,gnatcoll,all,Ignore: buildroot_issue,
@@ -270,7 +271,7 @@
 1,GtkAda3,all,Inspect: compile error,,"gtkada-canvas_view.ads:592:32: error: implicit conversion of anonymous access parameter not allowed"
 1,guestfs-tools,all,Inspect: check,
 1,guitarix,all,Ignore: gcc15-fail,
-1,gumbo-parser,all,Inspect: compile error,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
+1,gumbo-parser,all,PKGBUG: c++ std,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
 1,hamlib,all,Ignore: packaging,
 1,hash-o-matic,all,Ignore: buildroot_issue,
 1,hatari,all,Ignore: gcc15-fail,
@@ -350,17 +351,17 @@
 1,libaio,all,Ignore: infra_issue,
 1,libblkio,all,Ignore: pkgfail_prep,
 1,libcamera,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_construct.h:166:7: error: array subscript ‘std::mutex[0]’ is partly outside array bounds of ‘unsigned char [32]’ [-Werror=array-bounds=]"
-1,libcap,all,Inspect: check,
+1,libcap,all,PKGBUG: static libatomic,,""
 1,libchewing,all,Ignore: gcc15-fail,
 1,libcint,all,Ignore: excluded_arch,
-1,libclaw,all,Inspect: compile error,,"/builddir/build/BUILD/libclaw-1.7.4-build/libclaw-1.7.4/./claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,libclaw,all,PKGBUG: c++ type,,"/builddir/build/BUILD/libclaw-1.7.4-build/libclaw-1.7.4/./claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
 1,libdxfrw,all,PKGBUG: uninit,,"/builddir/build/BUILD/libdxfrw-1.1.0-build/libdxfrw-d73a25c61fa6b7f41000b38b4b4c8b32ed4e2fd1/src/intern/dwgbuffer.cpp:199:18: error: ‘buffer’ may be used uninitialized [-Werror=maybe-uninitialized]"
 1,liberation-circuit,all,Ignore: infra_issue,
 1,libetonyek,all,Inspect: compile error,,"/usr/include/mdds-3.0/mdds/global.hpp:161:47: error: 'bool_constant' is not a member of 'std'"
 1,libewf,all,Ignore: infra_issue,
 1,libextractor,all,Ignore: gcc15-fail,
 1,libexttextcat,all,Ignore: infra_issue,
-1,libfabric,all,Inspect: build,
+1,libfabric,all,PKGBUG: assembler,,"/tmp/ccgg0kJv.s: invalid attempt to declare external version name as default in symbol `fi_freeinfo@@FABRIC_1.8'"
 1,libfaketime,all,PKGBUG: unused,,"libmallocintercept.c:79:12: error: variable ‘ptr2’ set but not used [-Werror=unused-but-set-variable=]"
 1,libffado,all,Ignore: infra_issue,
 1,libformfactor,all,Ignore: infra_issue,
@@ -370,9 +371,9 @@
 1,libglvnd,all,Inspect: build,
 1,libieee1284,all,Inspect: build,
 1,libirc,all,Ignore: excluded_arch,
-1,libixion,all,Inspect: compile error,,"../../include/ixion/types.hpp:286:22: error: ‘string_view’ in namespace ‘std’ does not name a type"
+1,libixion,all,PKGBUG: c++ std,,"../../include/ixion/types.hpp:286:22: error: ‘string_view’ in namespace ‘std’ does not name a type"
 1,libkdumpfile,all,Inspect: check,
-1,libkkc,all,Inspect: compile error,,"/usr/include/marisa/key.h:21:21: error: 'std::string_view' has not been declared"
+1,libkkc,all,PKGBUG: c++ std,,"/usr/include/marisa/key.h:21:21: error: 'std::string_view' has not been declared"
 1,liblas,all,Ignore: gcc15-fail,
 1,liblo,all,PKGBUG: c23 str const,,"address.c:560:5: error: passing argument 4 of '__assert_fail' discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,libmamba,all,Inspect: compile error,,"/builddir/build/BUILD/libmamba-2.4.0-build/mamba-2.4.0/libmamba/include/mamba/util/random.hpp:50:53: error: ‘ref’ is not a member of ‘std’; did you mean ‘erf’? [-Wtemplate-body]"
@@ -384,7 +385,7 @@
 1,libodiosacd,all,Ignore: gcc15-fail,
 1,libofx,all,Inspect: compile error,,"/builddir/build/BUILD/libofx-0.10.9-build/libofx-0.10.9/lib/tree.hh:836:35: error: no matching function for call to ‘std::allocator<tree_node_<OfxGenericContainer*> >::allocate(int, int)’"
 1,liborc,all,Ignore: excluded_arch,
-1,liborcus,all,Inspect: compile error,,"../../include/orcus/spreadsheet/types.hpp:787:72: error: ‘string_view’ is not a member of ‘std’"
+1,liborcus,all,PKGBUG: c++ std,,"../../include/orcus/spreadsheet/types.hpp:787:72: error: ‘string_view’ is not a member of ‘std’"
 1,libpeas1,all,Ignore: gcc15-fail,
 1,libpfm,all,PKGBUG: unused,,"pfmlib_common.c:1912:19: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
 1,libpkgmanifest,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/stl_iterator.h:1111:16: error: array subscript 2 is outside array bounds of ‘const char32_t[1]’ [-Werror=array-bounds=]"
@@ -435,17 +436,17 @@
 1,mail-notification,all,PKGBUG: c23 str const,,"jbsrc/lib/src/core/jb-main.c:36:5: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,mangohud,all,Inspect: compile error,,"../src/gpu_fdinfo.cpp:287:27: error: aggregate ‘std::stringstream ss’ has incomplete type and cannot be defined"
 1,manifold,all,Ignore: buildroot_issue,
-1,mathic,all,Inspect: build,
-1,mathicgb,all,Inspect: build,
+1,mathic,all,PKGBUG: configure,,"gtest not found; try again using --without-gtest"
+1,mathicgb,all,PKGBUG: configure,,"gtest not found; try again using --without-gtest"
 1,Mayavi,all,Ignore: gcc15-fail,
 1,mbuffer,all,Ignore: gcc15-fail,
 1,mcrouter,all,PKGBUG: includes,,"Compression.h:53:3: error: ‘uint32_t’ does not name a type"
 1,mdadm,all,PKGBUG: unused,,"Assemble.c:1410:55: error: variable ‘replcnt’ set but not used [-Werror=unused-but-set-variable=]"
 1,mdbtools,all,PKGBUG: unused,,"parser.c:1035:9: error: variable 'yynerrs' set but not used [-Werror=unused-but-set-variable=]"
 1,mdds,all,Inspect: compile error,,"../../include/mdds/./multi_type_vector/soa/../../global.hpp:161:47: error: ‘bool_constant’ is not a member of ‘std’"
-1,memkind,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,memkind,all,PKGBUG: internals,,"src/jemalloc_cpp.cpp:90:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
 1,memstomp,all,PKGBUG: c type,,"memstomp.c:693:7: error: expected identifier or ‘(’ before ‘_Generic’"
-1,memtailor,all,Inspect: build,
+1,memtailor,all,PKGBUG: configure,,"gtest not found; try again using --without-gtest"
 1,merkuro,all,Ignore: buildroot_issue,
 1,meson,all,Ignore: buildroot_issue,
 1,mine_detector,all,Ignore: buildroot_issue,
@@ -466,9 +467,9 @@
 1,mlt,all,Ignore: buildroot_issue,
 1,mod_mapcache,all,Ignore: excluded_arch,
 1,mod_xsendfile,all,Ignore: infra_issue,
-1,mold,all,Inspect: check,
+1,mold,all,PKGBUG: assembler,,"/tmp/cce7f5xV.s: invalid attempt to declare external version name as default in symbol `foo@@VER1'"
 1,mongo-c-driver,all,Ignore: gcc15-fail,
-1,mpsolve,all,Inspect: compile error,,"/usr/include/octave-10.3.0/octave/../octave/Array-fwd.h:34:45: error: ‘pmr’ in namespace ‘std’ does not name a type"
+1,mpsolve,all,PKGBUG: c++ std,,"/usr/include/octave-10.3.0/octave/../octave/Array-fwd.h:34:45: error: ‘pmr’ in namespace ‘std’ does not name a type"
 1,mrchem,all,Ignore: excluded_arch,
 1,mt-st,all,Ignore: infra_issue,
 1,mumble,all,Ignore: infra_issue,
@@ -615,7 +616,7 @@
 1,pappl,all,Ignore: buildroot_issue,
 1,pappl-retrofit,all,Ignore: buildroot_issue,
 1,paprefs,all,Ignore: buildroot_issue,
-1,paps,all,Inspect: compile error,,"format_from_dict.h:30:23: error: ‘variant’ in namespace ‘std’ does not name a template type"
+1,paps,all,PKGBUG: c++ std,,"format_from_dict.h:30:23: error: ‘variant’ in namespace ‘std’ does not name a template type"
 1,par,all,Ignore: buildroot_issue,
 1,par2cmdline,all,Ignore: buildroot_issue,
 1,pari,all,Ignore: buildroot_issue,
@@ -644,7 +645,7 @@
 1,pcb,all,Ignore: buildroot_issue,
 1,pcem,all,PKGBUG: proto mismatch,,"disc.c:286:17: error: too many arguments to function ‘drives[drive].stop’; expected 0, have 1"
 1,pcg-cpp,all,Ignore: buildroot_issue,
-1,pciutils,all,Inspect: build,
+1,pciutils,all,PKGBUG: assembler,,"{standard input}: invalid attempt to declare external version name as default in symbol `pci_init@@LIBPCI_3.5'"
 1,pcmanfm,all,Ignore: buildroot_issue,
 1,pcmanfm-qt,all,Ignore: buildroot_issue,
 1,pcmanx-gtk2,all,Ignore: buildroot_issue,
@@ -733,10 +734,10 @@
 1,pidgin-sipe,all,PKGBUG: c23 str const,,"sipmsg.c:799:13: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,pigz,all,Ignore: infra_issue,
 1,pimd,all,Ignore: packaging,
-1,pinentry,all,Inspect: build,
+1,pinentry,all,PKGBUG: configure,,""
 1,plasma-pass,all,Ignore: buildroot_issue,
 1,plasma-smart-video-wallpaper-reborn,all,Ignore: pkgfail_install,
-1,plee-the-bear,all,Inspect: compile error,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
+1,plee-the-bear,all,PKGBUG: c++ type,,"/usr/include/claw/non_copyable.hpp:64:13: error: expected identifier before ‘concept’"
 1,plotnetcfg,all,Ignore: packaging,
 1,polybar,all,Ignore: gcc15-fail,
 1,portsentry,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/portsentry-2.0.6-build/portsentry-2.0.6/src/configfile.c:318:12: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
@@ -747,7 +748,7 @@
 1,procenv,all,PKGBUG: c23 str const,,"procenv.c:3668:15: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,proxmark3,all,Ignore: buildroot_issue,
 1,proxygen,all,Ignore: gcc15-fail,
-1,proxysql,all,Inspect: compile error,,"src/jemalloc_cpp.cpp:70:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
+1,proxysql,all,PKGBUG: internals,,"src/jemalloc_cpp.cpp:70:22: error: ‘__throw_bad_alloc’ is not a member of ‘std’; did you mean ‘__throw_bad_cast’?"
 1,prusa-slicer,all,Ignore: infra_issue,
 1,psacct,all,Ignore: infra_issue,
 1,psi4,all,Ignore: buildroot_issue,
@@ -794,7 +795,7 @@
 1,python-qcustomplot-pyqt,all,Ignore: packaging,
 1,python-rmtest,all,Ignore: buildroot_issue,
 1,python-scikit-image,all,Inspect: check,
-1,python-steps,all,Inspect: compile error,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
+1,python-steps,all,PKGBUG: c++ std,,"/usr/include/gtest/internal/gtest-port.h:273:2: error: #error C++ versions less than C++17 are not supported."
 1,python-symengine,all,Ignore: infra_issue,
 1,python-tkrzw,all,Ignore: excluded_arch,
 1,python-uharfbuzz,all,Ignore: infra_issue,
@@ -804,11 +805,11 @@
 1,qatlib,all,Ignore: excluded_arch,
 1,qbs,all,Ignore: excluded_arch,
 1,qcad,all,Ignore: gcc15-fail,
-1,qclib,all,Inspect: build,
+1,qclib,all,PKGBUG: static libatomic,,""
 1,qcoro,all,Ignore: gcc15-fail,
 1,qdmr,all,Ignore: gcc15-fail,
 1,qemu,all,Ignore: infra_issue,
-1,qemu-sanity-check,all,Inspect: build,
+1,qemu-sanity-check,all,PKGBUG: configure,,"Building a static binary failed.  Make sure you have static libc installed."
 1,qgis,all,Ignore: infra_issue,
 1,qmasterpassword,all,Inspect: compile error,,"/builddir/build/BUILD/qmasterpassword-2.0.3-build/qMasterPassword-2.0.3/redhat-linux-build/qMasterPassword_autogen/6YEA5652QU/../../../include/identicon.h:54:48: error: invalid conversion from ‘const char8_t*’ to ‘const char*’ [-fpermissive]"
 1,qoauth,all,Ignore: buildroot_issue,
@@ -914,7 +915,7 @@
 1,rr,all,Ignore: gcc15-fail,
 1,rshim,all,Inspect: compile error,,"/usr/include/fuse3/fuse_common.h:1155:1: error: static assertion failed: "fuse: off_t must be 64bit""
 1,rsyslog,all,Ignore: infra_issue,
-1,rtmidi,all,Inspect: build,
+1,rtmidi,all,PKGBUG: configure,,"JACK support requires the jack library!"
 1,rubygem-eventmachine,all,Ignore: infra_issue,
 1,rubygem-ffi,all,Ignore: infra_issue,
 1,rubygem-opengl,all,Inspect: check,
@@ -952,19 +953,81 @@
 1,sigul,all,Ignore: buildroot_issue,
 1,simcoupe,all,Inspect: compile error,,"/usr/include/c++/16/bits/std_abs.h:110:3: error: redefinition of ‘constexpr __int128 std::abs(__int128)’"
 1,Simple-Fuzzer,all,PKGBUG: unused,,"os-abs.c:695:11: error: variable ‘repls’ set but not used [-Werror=unused-but-set-variable=]"
-1,Singular,all,Inspect: compile error,,"/usr/include/gfanlib/gfanlib_memoryresource.h:45:22: error: 'experimental' in namespace 'std' does not name a type"
+1,Singular,all,PKGBUG: c++ std,,"/usr/include/gfanlib/gfanlib_memoryresource.h:45:22: error: 'experimental' in namespace 'std' does not name a type"
 1,siril,all,Inspect: build,
 1,six,all,Ignore: buildroot_issue,
 1,ski,all,Ignore: excluded_arch,
+1,sleef,all,Inspect: check,
 1,slic3r,all,Ignore: infra_issue,
+1,slim,all,Ignore: buildroot_issue,
+1,slurm,all,Ignore: buildroot_issue,
+1,smplayer,all,PKGBUG: unused,,"mongoose.c:3765:7: error: variable ‘num_fds’ set but not used [-Werror=unused-but-set-variable=]"
+1,snapd,all,Ignore: buildroot_issue,
+1,snappy,all,Inspect: check,
+1,snoopy,all,Inspect: compile error,,"../../src/snoopy.h:31:10: error: ‘_XOPEN_SOURCE’ redefined [-Werror]"
+1,soci,all,Inspect: check,
+1,socnetv,all,Ignore: excluded_arch,
 1,solidity,all,Inspect: build,
+1,soundmodem,all,PKGBUG: incompat ptr,,"meas.c:438:25: error: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,sourcextractor++,all,Inspect: build,
+1,sparrow,all,PKGBUG: includes,,"/builddir/build/BUILD/sparrow-0.6.0-build/sparrow-0.6.0/include/sparrow/buffer/dynamic_bitset/dynamic_bitset_base.hpp:155:78: error: ‘CHAR_BIT’ was not declared in this scope [-Wtemplate-body]"
+1,sparsehash,all,Inspect: compile error,,"./src/sparsehash/sparsetable:1360:53: error: no class template named ‘rebind’ in ‘class std::allocator<int>’"
+1,spectra,all,Inspect: compile error,,"/builddir/build/BUILD/spectra-1.1.0-build/spectra-1.1.0/test/SVD.cpp:51:30: error: no matching function for call to ‘Eigen::JacobiSVD<Eigen::Matrix<double, -1, -1> >::JacobiSVD(const Eigen::SparseMatrix<double>&, int)’"
+1,speech-dispatcher,all,Ignore: infra_issue,
+1,speech-tools,all,Inspect: compile error,,"EST_UtteranceFile.cc:279:13: error: reference to ‘relation’ is ambiguous"
 1,spice,all,Inspect: compile error,,"../server/tests/test-display-base.cpp:809:5: error: either all initializer clauses should be designated or none of them should be"
+1,spirv-tools,all,PKGBUG: uninit,,"/builddir/build/BUILD/spirv-tools-2025.4-build/SPIRV-Tools-vulkan-sdk-1.4.328.1/source/opt/decoration_manager.cpp:546:27: error: ‘MEM[(unsigned int &)&op + 24]’ may be used uninitialized [-Werror=maybe-uninitialized]"
 1,springlobby,all,Ignore: buildroot_issue,
+1,stevia,all,Ignore: excluded_arch,
+1,stlsplit,all,Inspect: build,
+1,strace,all,PKGBUG: unused,,"time_enjoyment.h:27:22: error: variable ‘dummy’ set but not used [-Werror=unused-but-set-variable=]"
+1,subtitleeditor,all,Ignore: infra_issue,
 1,sundials,all,Ignore: buildroot_issue,
+1,supermin,all,PKGBUG: static libatomic,,""
+1,supernovas,all,Inspect: build,
+1,suricata,all,Ignore: excluded_arch,
+1,sword,all,Inspect: compile error,,"/builddir/build/BUILD/sword-1.9.0-build/sword-1.9.0/tests/swbuftest.cpp:167:41: error: use of deleted function ‘std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*) [with _Traits = char_traits<char>]’"
+1,sympa,all,Ignore: excluded_arch,
+1,synthv1,all,Inspect: check,
+1,systemtap,all,Inspect: compile error,,"language-server/stap-language-server.cxx:169:41: error: use of ‘auto’ in lambda parameter declaration only available with ‘-std=c++14’ or ‘-std=gnu++14’"
 1,tarantool,all,PKGBUG: c type,,"/builddir/build/BUILD/tarantool-2.4.2.68-build/tarantool-2.4.2.68/extra/lemon.c:766:6: error: conflicting types for ‘FindRulePrecedences’; have ‘void(struct lemon *)’"
+1,target-isns,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/target-isns-0.6.8-build/target-isns-0.6.8/src/configfs.c:244:19: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,taskd,all,Ignore: infra_issue,
+1,task-spooler,all,PKGBUG: proto mismatch,,"main.c:426:9: error: too many arguments to function ‘print_version’; expected 0, have 1"
+1,taxipilot,all,Ignore: buildroot_issue,
+1,tayga,all,PKGBUG: unused,,"./tayga.h:57:29: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable=]"
 1,tboot,all,PKGBUG: unused,,"safeclib/strpbrk_s.c:95:13: error: variable ‘len’ set but not used [-Werror=unused-but-set-variable=]"
+1,tcalc,all,PKGBUG: c type,,"custom_func.c:222:6: error: conflicting types for ‘print_vars’; have ‘void(struct custom_func_s *)’"
+1,tcl-pgtcl,all,Inspect: compile error,,"pgtclCmds.h:138:66: error: expected ‘;’, ‘,’ or ‘)’ before ‘objv’"
+1,tcl-tcludp,all,Inspect: compile error,,"./generic/udp_tcl.c:96:32: error: variable or field ‘udpClose’ declared void"
+1,tcl-tkpng,all,Inspect: compile error,,"./generic/tkImgPNG.c:163:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_ANSI_ARGS_’"
+1,tcl-tktreectrl,all,Inspect: compile error,,"./generic/qebind.h:75:24: error: expected ‘;’, ‘,’ or ‘)’ before ‘objv’"
+1,tcmu-runner,all,Ignore: buildroot_issue,
+1,tcptrack,all,PKGBUG: unused,,"TCContainer.cc:180:21: error: variable ‘numitems’ set but not used [-Werror=unused-but-set-variable=]"
+1,tdom,all,Inspect: compile error,,"./generic/tclexpat.h:152:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_ANSI_ARGS_’"
+1,templates_parser,all,Ignore: buildroot_issue,
+1,texlive-base,all,Inspect: compile error,,"../../../../../../texk/dvisvgm/dvisvgm-src/libs/clipper/clipper.cpp:1973:12: error: ambiguous overload for ‘operator!=’ (operand types are ‘ClipperLib::ZType’ and ‘int’)"
+1,texworks,all,Inspect: check,
 1,thunderbird,all,Ignore: excluded_arch,
+1,tideEditor,all,Ignore: infra_issue,
+1,tiled,all,Inspect: compile error,,"/builddir/build/BUILD/tiled-1.11.2-build/tiled-1.11.2/src/karchive/src/krcc.cpp:113:53: error: no matching function for call to ‘QString::arg(QIODeviceBase::OpenMode&)’"
+1,timescaledb,all,Inspect: build,
+1,tini,all,PKGBUG: static libatomic,,""
+1,tinyfugue,all,Inspect: compile error,,"signals.c:329:17: error: ‘return’ with no value, in function returning non-void [-Wreturn-mismatch]"
+1,tinyows,all,PKGBUG: configure,,"'no' is not an executable.  Make sure you use --with-pg_config=/path/to/pg_config"
+1,tktray,all,PKGBUG: incompat ptr,,"tktray.c:43:55: error: passing argument 5 of ‘tkStubsPtr->tk_CreateErrorHandler’ from incompatible pointer type [-Wincompatible-pointer-types]"
+1,tlf,all,PKGBUG: includes,,"test_dxcc.c:31:5: error: ‘uintptr_t’ undeclared (first use in this function)"
+1,tntnet,all,PKGBUG: configure,,"cxxtools headers not found"
+1,toolshed,all,PKGBUG: unused,,"../../../libdecb/libdecbbinconcat.c:216:15: error: variable ‘post_amble_size’ set but not used [-Werror=unused-but-set-variable=]"
+1,trackballs,all,Inspect: compile error,,"/usr/include/SDL2/SDL_ttf.h:165:16: error: using typedef-name ‘TTF_Font’ after ‘struct’"
+1,trademgen,all,Inspect: check,
 1,trafficserver,all,Inspect: compile error,,"/builddir/build/BUILD/trafficserver-10.1.0-build/trafficserver-10.1.0/include/tsutil/Regex.h:51:24: error: expected ‘)’ before ‘size’"
+1,transactional-update,all,PKGBUG: configure,,"*** A compiler with support for C++17 language features is required."
+1,trurl,all,PKGBUG: c23 str const,,"trurl.c:486:13: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,ttcp,all,PKGBUG: proto mismatch,,"ttcp.c:343:17: error: too many arguments to function ‘err’; expected 0, have 1"
+1,tucnak,all,Ignore: buildroot_issue,
+1,tuned-switcher,all,Ignore: excluded_arch,
+1,tuxpaint,all,PKGBUG: c23 str const,,"src/tuxpaint.c:13551:51: error: assignment of read-only location ‘*(const char *)strchr(short_lang_prefix, 95)’"
 1,tvtime,all,Ignore: gcc15-fail,
 1,uboot-tools,all,Inspect: build,
 1,ucx,all,Inspect: compile error,,"perftest.c:236:11: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
@@ -979,4 +1042,4 @@
 1,wivrn,all,Inspect: compile error,,"/builddir/build/BUILD/wivrn-25.12-build/WiVRn-25.12/dashboard/settings.cpp:544:27: error: ‘::close’ has not been declared; did you mean ‘pclose’?"
 1,wult,all,Ignore: buildroot_issue,
 1,xen,all,PKGBUG: c23 str const,,"libxl_internal.c:207:15: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
-1,xtensor-python,all,Inspect: compile error,,"/usr/include/xtensor/utils/xutils.hpp:590:5: error: ‘concept’ does not name a type; did you mean ‘const’?"
+1,xtensor-python,all,PKGBUG: c++ std,,"/usr/include/xtensor/utils/xutils.hpp:590:5: error: ‘concept’ does not name a type; did you mean ‘const’?"
