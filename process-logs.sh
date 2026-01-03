@@ -1,16 +1,24 @@
 #!/bin/bash
 
 is_pkgbug_includes() {
-	if echo "$1" | tail -1 | grep -q "this is probably fixable by adding ‘#include"; then
+	if echo "$1" | tail -1 | grep -q -e "this is probably fixable by adding ‘#include" \
+		-e "use of undeclared identifier 'uint64_t'"; then
 		return 0
-	elif echo "$1" | head -1 | grep -q "use of undeclared identifier 'uint64_t'"; then
+	fi
+	return 1
+}
+
+is_pkgbug_internals() {
+	if echo "$1" | grep -q -e ".__.* is not a member of .std." \
+		-e ".*__.* does not name a type"; then
 		return 0
 	fi
 	return 1
 }
 
 is_pkgbug_bounds() {
-	if echo "$1" | grep -q "\[-Werror=array-bounds=\]"; then
+	if echo "$1" | grep -q -e "\[-Werror=array-bounds=\]" \
+		-e "\[-Werror=stringop-overflow=\]"; then
 		return 0
 	fi
 	return 1
@@ -75,7 +83,18 @@ is_pkgbug_c_type() {
 }
 
 is_pkgbug_cxx_type() {
-	if echo "$1" | grep -q "redeclaration of C++ built-in type"; then
+	if echo "$1" | grep -q -e "redeclaration of C++ built-in type" \
+		-e "expected identifier before ‘concept’"; then
+		return 0
+	fi
+	return 1
+}
+
+is_pkgbug_cxx_std() {
+	if echo "$1" | grep -q -e "C++ versions less than C++.. are not supported" \
+		-e "note: .* is only available from C++.. onwards" \
+		-e "‘concept’ does not name a type" \
+		-e "'experimental' in namespace 'std' does not name a type"; then
 		return 0
 	fi
 	return 1
@@ -88,7 +107,7 @@ is_gcc_derivative() {
 	return 1
 }
 
-find_error_line() {
+find_cpp_error_line() {
 	name=$1
 	logfile=$2
 
@@ -112,8 +131,12 @@ find_error_line() {
 			t="PKGBUG: unused"
 		elif is_pkgbug_cxx_type "$first_line"; then
 			t="PKGBUG: c++ type"
+		elif is_pkgbug_cxx_std "$error_lines"; then
+			t="PKGBUG: c++ std"
 		elif is_pkgbug_c_type "$first_line"; then
 			t="PKGBUG: c type"
+		elif is_pkgbug_internals "$first_line"; then
+			t="PKGBUG: internals"
 		elif is_pkgbug_includes "$error_lines"; then
 			t="PKGBUG: includes"
 		elif is_gcc_derivative "$first_line"; then
@@ -130,6 +153,34 @@ find_error_line() {
 	return 1
 }
 
+find_other_error_line() {
+	name=$1
+	logfile=$2
+	log_end="$(zcat $logfile | tail -500)"
+	error_line=
+
+	if echo "$log_end" | grep -q -e "\*\*\* No rule to make target"; then
+		t="PKGBUG: make error"
+	elif echo "$log_end" | grep -A 1 -e "^Error: .*" | head -2 | grep -q ".*.f[^:]*:[0-9]\+:[0-9]\+:"; then
+		t="PKGBUG: fortran"
+		error_line=$(echo "$log_end" | grep -A 1 -e "^Error: .*" | head -1)
+	elif echo "$log_end" | grep -A 1 -e "Assembler messages:$" | head -2 | grep -q "[eE]rror: "; then
+		t="PKGBUG: assembler"
+		error_line=$(echo "$log_end" | grep -A 1 -e 'Assembler messages:$' | sed -n 's/[Ee]rror: \(.*\)/\1/p')
+	elif echo "$log_end" | grep -q -e "configure: error: "; then
+		t="PKGBUG: configure"
+		error_line=$(echo "$log_end" | sed -n 's/configure: error: \(.*\)/\1/p')
+	elif echo "$log_end" | grep -B 1 -e "error: ld returned 1 exit status" | head -1 | grep -q "have you installed the static version of the atomic library"; then
+		t="PKGBUG: static libatomic"
+	fi
+
+	if [ "x$t" != "x" ]; then
+		echo "1,$name,all,$t,,\"$error_line\""
+		return 0
+	fi
+	return 1
+}
+
 find_ice() {
 	name=$1
 	logfile=$2
@@ -139,7 +190,7 @@ find_ice() {
 		return 1
 	fi
 
-	error_line=$(zgrep ":[0-9]\+:[0-9]\+: internal compiler error:" $logfile | head -1)
+	error_line=$(zgrep ": internal compiler error:" $logfile | head -1)
 	if [ "x$error_line" != "x" ]; then
 		echo "1,$name,all,ICE,,\"$error_line\""
 		return 0
@@ -231,7 +282,10 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 			if find_ice $name $logfile; then
 				finished=1
 				break
-			elif find_error_line $name $logfile; then
+			elif find_cpp_error_line $name $logfile; then
+				finished=1
+				break
+			elif find_other_error_line $name $logfile; then
 				finished=1
 				break
 			fi
