@@ -59,7 +59,7 @@
 1,bochs,all,Ignore: buildroot_issue,
 1,bolt,all,Inspect: check,
 1,bonnie++,all,Ignore: packaging,
-1,bout++,all,Ignore: gcc15-fail,
+1,bout++,all,Inspect: compile error,,"/builddir/build/BUILD/bout++-5.2.0-build/BOUT++-v5.2.0/include/bout/boutexception.hxx:23:34: error: call to consteval function ‘fmt::v11::fstring<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>((* & format))’ is not a constant expression"
 1,bowtie,all,Ignore: excluded_arch,
 1,bpftrace,all,Ignore: infra_issue,
 1,breezy,all,Ignore: gcc15-fail,
@@ -91,7 +91,7 @@
 1,cjdns,all,Ignore: gcc15-fail,
 1,ck,all,Ignore: infra_issue,
 1,clang13,all,PKGBUG: includes,,"/usr/lib64/llvm13/include/llvm/ADT/SmallVector.h:92:69: error: ‘uint64_t’ was not declared in this scope"
-1,clang17,all,Ignore: gcc15-fail,
+1,clang17,all,Inspect: compile error,,"/usr/lib64/llvm17/include/llvm/ADT/SmallVector.h:109:62: error: use of undeclared identifier 'uint64_t'"
 1,clang18,all,Inspect: check,
 1,clap,all,Ignore: infra_issue,
 1,coan,all,Ignore: gcc15-fail,
@@ -314,7 +314,7 @@
 1,js8call,all,Ignore: buildroot_issue,
 1,json-fortran,all,Ignore: gcc15-fail,
 1,jss,all,Ignore: gcc15-fail,
-1,julia,all,Ignore: gcc15-fail,
+1,julia,all,Inspect: check,
 1,k2hash,all,Ignore: excluded_arch,
 1,k3guitune,all,Ignore: buildroot_issue,
 1,kafs-client,all,PKGBUG: c23 str const,,"lib_cellserv.c:72:19: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
@@ -416,7 +416,7 @@
 1,libyui-mga-ncurses,all,Inspect: compile error,,"/builddir/build/BUILD/libyui-mga-ncurses-1.2.0-build/libyui-mga-ncurses-1.2.0/src/NCMenu.cc:125:98: error: use of deleted function ‘std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t) [with _Traits = char_traits<char>]’"
 1,libzypp,all,Ignore: buildroot_issue,
 1,links,all,PKGBUG: c23 str const,,"ftp.c:771:99: error: assignment of read-only location ‘*(const char *)strchr((const char *)ud, 1)’"
-1,linux-sgx,all,Ignore: gcc15-fail,
+1,linux-sgx,all,Inspect: compile error,,"trts_veh.cpp:200:90: error: ‘regparm’ attribute ignored [-Werror=attributes]"
 1,liquid-dsp,all,Ignore: excluded_arch,
 1,lis,all,PKGBUG: proto mismatch,,"../../../src/precon/lis_precon.c:344:19: error: too many arguments to function ‘(void (*)(void))f_clear_matrix_ptr’; expected 0, have 1"
 1,lld13,all,PKGBUG: includes,,"/usr/lib64/llvm13/include/llvm/ADT/SmallVector.h:92:69: error: ‘uint64_t’ was not declared in this scope"
@@ -485,7 +485,7 @@
 1,n2n,all,Ignore: packaging,
 1,nas,all,Ignore: pkgfail_install,
 1,nbdkit,all,PKGBUG: c++ std,,"/usr/include/libtorrent/aux_/container_wrapper.hpp:64:17: error: 'decltype(auto)' type specifier only available with '-std=c++14' or '-std=gnu++14' [-Wtemplate-body]"
-1,ncmpcpp,all,Ignore: gcc15-fail,
+1,ncmpcpp,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_heap.h:236:21: error: no match for call to ‘(LocaleBasedSorting) (boost::iterators::detail::operator_brackets_result<boost::iterators::transform_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item::ExtractValue<Const::No>, __gnu_cxx::__normal_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item*, std::vector<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item, std::allocator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item> > >, boost::use_default, boost::use_default>, RunnableItem<std::__cxx11::basic_string<char>, void()>, RunnableItem<std::__cxx11::basic_string<char>, void()>&>::type, boost::iterators::detail::operator_brackets_result<boost::iterators::transform_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item::ExtractValue<Const::No>, __gnu_cxx::__normal_iterator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item*, std::vector<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item, std::allocator<NC::Menu<RunnableItem<std::__cxx11::basic_string<char>, void()> >::Item> > >, boost::use_default, boost::use_default>, RunnableItem<std::__cxx11::basic_string<char>, void()>, RunnableItem<std::__cxx11::basic_string<char>, void()>&>::type)’"
 1,NearTree,all,Ignore: gcc15-fail,
 1,neomutt,all,Ignore: buildroot_issue,
 1,neovim-qt,all,Ignore: gcc15-fail,
@@ -883,7 +883,7 @@
 1,rccl,all,Ignore: infra_issue,
 1,rclone-browser,all,Ignore: buildroot_issue,
 1,rcs,all,Ignore: buildroot_issue,
-1,rcssmonitor,all,Ignore: gcc15-fail,
+1,rcssmonitor,all,Inspect: compile error,,"/builddir/build/BUILD/rcssmonitor-19.0.0-build/rcssmonitor-19.0.0/rcss/rcg/simdjson/simdjson.h:6263:13: error: ‘class simdjson::internal::base_formatter<formatter>’ has no member named ‘print_newline’; did you mean ‘call_print_newline’? [-Wtemplate-body]"
 1,rcssserver,all,Ignore: buildroot_issue,
 1,rcssserver3d,all,Ignore: buildroot_issue,
 1,rdfind,all,Ignore: buildroot_issue,
@@ -909,7 +909,7 @@
 1,rEFInd,all,Ignore: gcc15-fail,
 1,retroarch,all,Ignore: excluded_arch,
 1,rigsync,all,Ignore: buildroot_issue,
-1,rizin,all,Ignore: gcc15-fail,
+1,rizin,all,Inspect: build,
 1,rmol,all,Inspect: check,
 1,rocksndiamonds,all,Inspect: build,
 1,root,all,Inspect: check,
@@ -918,7 +918,7 @@
 1,rpm-git-tag-sort,all,Ignore: buildroot_issue,
 1,rpminspect,all,PKGBUG: c23 str const,,"../lib/files.c:625:9: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,rr,all,Ignore: gcc15-fail,
-1,rshim,all,Ignore: gcc15-fail,
+1,rshim,all,Inspect: compile error,,"/usr/include/fuse3/fuse_common.h:1155:1: error: static assertion failed: "fuse: off_t must be 64bit""
 1,rsyslog,all,Ignore: infra_issue,
 1,rtmidi,all,PKGBUG: configure,,"JACK support requires the jack library!"
 1,rubygem-eventmachine,all,Ignore: infra_issue,
@@ -930,7 +930,7 @@
 1,rust-vhost-device-gpu,all,Ignore: gcc15-fail,
 1,rxvt-unicode,all,Inspect: compile error,,"rxvttoolkit.C:837:33: error: call of overloaded ‘lerp<int, int, int>(int, rgba::<unnamed enum>, uint16_t&)’ is ambiguous"
 1,s390utils,all,Inspect: build,
-1,samplv1,all,Ignore: gcc15-fail,
+1,samplv1,all,Inspect: check,
 1,sane-backends,all,PKGBUG: c23 str const,,"gphoto2.c:589:60: error: assignment of read-only location ‘*(const char *)strchr((const char *)*(folder_list + (sizetype)((long unsigned int)n * 8)), 32)’"
 1,satyr,all,Inspect: check,
 1,sblim-sfcc,all,Ignore: infra_issue,
@@ -942,7 +942,7 @@
 1,sciplot,all,Ignore: infra_issue,
 1,scipy,all,Inspect: check,
 1,scorep,all,Inspect: compile error,,"../../build-gcc-plugin/../src/adapters/compiler/gcc-plugin/scorep_plugin_gcc_version_compatibility.h:29:25: error: ‘TODO_verify_il’ was not declared in this scope; did you mean ‘TODO_verify_ssa’?"
-1,sdcv,all,Ignore: gcc15-fail,
+1,sdcv,all,Inspect: compile error,,"/usr/include/glib-2.0/glib/gunicode.h:837:34: error: invalid conversion from ‘const gchar*’ {aka ‘const char*’} to ‘gchar*’ {aka ‘char*’} [-fpermissive]"
 1,sdformat,all,Ignore: buildroot_issue,
 1,sdl2-compat,all,Inspect: check,
 1,sdl-crypto,all,Ignore: infra_issue,
@@ -959,7 +959,7 @@
 1,simcoupe,all,Inspect: compile error,,"/usr/include/c++/16/bits/std_abs.h:110:3: error: redefinition of ‘constexpr __int128 std::abs(__int128)’"
 1,Simple-Fuzzer,all,PKGBUG: unused,,"os-abs.c:695:11: error: variable ‘repls’ set but not used [-Werror=unused-but-set-variable=]"
 1,Singular,all,PKGBUG: c++ std,,"/usr/include/gfanlib/gfanlib_memoryresource.h:45:22: error: 'experimental' in namespace 'std' does not name a type"
-1,siril,all,Ignore: gcc15-fail,
+1,siril,all,Inspect: build,
 1,six,all,Ignore: buildroot_issue,
 1,ski,all,Ignore: excluded_arch,
 1,sleef,all,Inspect: check,
@@ -993,7 +993,7 @@
 1,suricata,all,Ignore: excluded_arch,
 1,sword,all,Inspect: compile error,,"/builddir/build/BUILD/sword-1.9.0-build/sword-1.9.0/tests/swbuftest.cpp:167:41: error: use of deleted function ‘std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*) [with _Traits = char_traits<char>]’"
 1,sympa,all,Ignore: excluded_arch,
-1,synthv1,all,Ignore: gcc15-fail,
+1,synthv1,all,Inspect: check,
 1,systemtap,all,PKGBUG: c++ std,,"language-server/stap-language-server.cxx:169:41: error: use of ‘auto’ in lambda parameter declaration only available with ‘-std=c++14’ or ‘-std=gnu++14’"
 1,tarantool,all,PKGBUG: c type,,"/builddir/build/BUILD/tarantool-2.4.2.68-build/tarantool-2.4.2.68/extra/lemon.c:766:6: error: conflicting types for ‘FindRulePrecedences’; have ‘void(struct lemon *)’"
 1,target-isns,all,PKGBUG: c23 str const,,"/builddir/build/BUILD/target-isns-0.6.8-build/target-isns-0.6.8/src/configfs.c:244:19: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
@@ -1003,22 +1003,22 @@
 1,tayga,all,PKGBUG: unused,,"./tayga.h:57:29: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable=]"
 1,tboot,all,PKGBUG: unused,,"safeclib/strpbrk_s.c:95:13: error: variable ‘len’ set but not used [-Werror=unused-but-set-variable=]"
 1,tcalc,all,PKGBUG: c type,,"custom_func.c:222:6: error: conflicting types for ‘print_vars’; have ‘void(struct custom_func_s *)’"
-1,tcl-pgtcl,all,Ignore: gcc15-fail,
-1,tcl-tcludp,all,Ignore: gcc15-fail,
-1,tcl-tkpng,all,Ignore: gcc15-fail,
-1,tcl-tktreectrl,all,Ignore: gcc15-fail,
+1,tcl-pgtcl,all,Inspect: compile error,,"pgtclCmds.h:138:66: error: expected ‘;’, ‘,’ or ‘)’ before ‘objv’"
+1,tcl-tcludp,all,Inspect: compile error,,"./generic/udp_tcl.c:96:32: error: variable or field ‘udpClose’ declared void"
+1,tcl-tkpng,all,Inspect: compile error,,"./generic/tkImgPNG.c:163:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_ANSI_ARGS_’"
+1,tcl-tktreectrl,all,Inspect: compile error,,"./generic/qebind.h:75:24: error: expected ‘;’, ‘,’ or ‘)’ before ‘objv’"
 1,tcmu-runner,all,Ignore: buildroot_issue,
 1,tcptrack,all,PKGBUG: unused,,"TCContainer.cc:180:21: error: variable ‘numitems’ set but not used [-Werror=unused-but-set-variable=]"
-1,tdom,all,Ignore: gcc15-fail,
+1,tdom,all,Inspect: compile error,,"./generic/tclexpat.h:152:27: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_ANSI_ARGS_’"
 1,templates_parser,all,Ignore: buildroot_issue,
 1,texlive-base,all,PKGBUG: c++ std,,"../../../../../../texk/dvisvgm/dvisvgm-src/libs/clipper/clipper.cpp:1973:12: error: ambiguous overload for ‘operator!=’ (operand types are ‘ClipperLib::ZType’ and ‘int’)"
 1,texworks,all,Inspect: check,
 1,thunderbird,all,Ignore: excluded_arch,
 1,tideEditor,all,Ignore: infra_issue,
 1,tiled,all,Inspect: compile error,,"/builddir/build/BUILD/tiled-1.11.2-build/tiled-1.11.2/src/karchive/src/krcc.cpp:113:53: error: no matching function for call to ‘QString::arg(QIODeviceBase::OpenMode&)’"
-1,timescaledb,all,Ignore: gcc15-fail,
+1,timescaledb,all,Inspect: build,
 1,tini,all,PKGBUG: static libatomic,,""
-1,tinyfugue,all,Ignore: gcc15-fail,
+1,tinyfugue,all,Inspect: compile error,,"signals.c:329:17: error: ‘return’ with no value, in function returning non-void [-Wreturn-mismatch]"
 1,tinyows,all,PKGBUG: configure,,"'no' is not an executable.  Make sure you use --with-pg_config=/path/to/pg_config"
 1,tktray,all,PKGBUG: incompat ptr,,"tktray.c:43:55: error: passing argument 5 of ‘tkStubsPtr->tk_CreateErrorHandler’ from incompatible pointer type [-Wincompatible-pointer-types]"
 1,tlf,all,PKGBUG: includes,,"test_dxcc.c:31:5: error: ‘uintptr_t’ undeclared (first use in this function)"
@@ -1036,17 +1036,17 @@
 1,tvtime,all,Ignore: gcc15-fail,
 1,tzdata,all,Ignore: buildroot_issue,
 1,ubloxcfg,all,PKGBUG: unused,,"ff/ff_nmea.c:296:9: error: variable ‘nTok’ set but not used [-Werror=unused-but-set-variable=]"
-1,uboot-tools,all,Ignore: gcc15-fail,
+1,uboot-tools,all,Inspect: build,
 1,ucx,all,PKGBUG: openmp,,"perftest.c:236:11: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
-1,ularn,all,Ignore: gcc15-fail,
+1,ularn,all,Inspect: build,
 1,undbx,all,PKGBUG: unused,,"dbxread.c:178:9: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
 1,usd,all,Ignore: buildroot_issue,
 1,uuid,all,Inspect: build,
-1,valeronoi,all,Ignore: gcc15-fail,
+1,valeronoi,all,Inspect: compile error,,"/builddir/build/BUILD/valeronoi-0.2.1-build/Valeronoi-0.2.1/src/valeronoi.cpp:420:38: error: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Werror=deprecated-declarations]"
 1,valgrind,all,Inspect: check,
 1,varnish,all,PKGBUG: c23 str const,,"varnishncsa.c:611:15: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,vdr-live,all,PKGBUG: internals,,"/usr/include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
-1,vecgeom,all,Ignore: gcc15-fail,
+1,vecgeom,all,Inspect: compile error,,"/builddir/build/BUILD/vecgeom-1.2.7-build/VecGeom-v1.2.7/VecGeom/volumes/PlacedAssembly.h:172:21: error: inlining failed in call to ‘always_inline’ ‘vecgeom::cxx::PlacedAssembly::SafetyToIn(vecgeom::cxx::Vector3D<double> const&) const’: recursive inlining"
 1,vectorscan,all,Ignore: excluded_arch,
 1,verbiste,all,Ignore: packaging,
 1,veusz,all,Inspect: check,
@@ -1067,20 +1067,20 @@
 1,wingpanel,all,Ignore: buildroot_issue,
 1,wivrn,all,Inspect: compile error,,"/builddir/build/BUILD/wivrn-25.12-build/WiVRn-25.12/dashboard/settings.cpp:544:27: error: ‘::close’ has not been declared; did you mean ‘pclose’?"
 1,wlroots,all,Ignore: infra_issue,
-1,wordnet,all,Ignore: gcc15-fail,
+1,wordnet,all,Inspect: compile error,,"stubs.c:43:14: error: invalid use of incomplete typedef ‘Tcl_Interp’"
 1,worminator,all,PKGBUG: c type,,"/usr/include/allegro/alcompat.h:44:7: error: conflicting types for ‘fadd’; have ‘fixed(fixed,  fixed)’ {aka ‘int(int,  int)’}"
 1,wsjtx,all,PKGBUG: fortran,,"Error: Missing actual argument ‘pos’ in call to ‘split’ at (1)"
 1,wult,all,Ignore: buildroot_issue,
 1,xalan-c,all,Inspect: compile error,,"/builddir/build/BUILD/xalan-c-1.12.0-build/xalan_c-1.12/src/xalanc/XMLSupport/XalanOtherEncodingWriter.hpp:323:31: error: ‘class xalanc_1_12::XalanOtherEncodingWriter<Predicate, ConstantsType>’ has no member named ‘m_isPresentable’ [-Wtemplate-body]"
 1,xcb-imdkit,all,Ignore: infra_issue,
-1,xclock,all,Ignore: gcc15-fail,
-1,xdg-desktop-portal-hyprland,all,Ignore: gcc15-fail,
+1,xclock,all,Inspect: build,
+1,xdg-desktop-portal-hyprland,all,Inspect: compile error,,"/builddir/build/BUILD/xdg-desktop-portal-hyprland-1.3.6-build/xdg-desktop-portal-hyprland-1.3.6/src/core/PortalManager.cpp:204:58: error: no matching function for call to ‘createSessionBusConnection(const char [45])’"
 1,xen,all,PKGBUG: c23 str const,,"libxl_internal.c:207:15: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
 1,xfce4-genmon-plugin,all,Ignore: infra_issue,
 1,xlockmore,all,Inspect: compile error,,"xglock.c:717:5: error: void value not ignored as it ought to be"
 1,xlog,all,Ignore: buildroot_issue,
 1,xpilot-ng,all,PKGBUG: c type,,"suibotdef.c:382:13: error: conflicting types for ‘Get_object_proximity’; have ‘char(player_t *, object_t *, double,  int,  object_proximity_t *)’ {aka ‘char(struct player *, struct xp_object *, double,  int,  object_proximity_t *)’}"
-1,xschem,all,Ignore: gcc15-fail,
+1,xschem,all,Inspect: compile error,,"scheduler.c:3099:3: error: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]"
 1,xsimd,all,Inspect: compile error,,"/builddir/build/BUILD/xsimd-13.2.0-build/xsimd-13.2.0/test/test_arch.cpp:29:72: error: static assertion failed: on arm, without sve, the best we can do is neon64"
 1,xss-lock,all,Ignore: infra_issue,
 1,xteddy,all,Ignore: infra_issue,
@@ -1089,6 +1089,6 @@
 1,yara,all,Ignore: infra_issue,
 1,yosys,all,Ignore: excluded_arch,
 1,ytalk,all,PKGBUG: proto mismatch,,"main.c:37:1: error: number of arguments doesn’t match prototype"
-1,zeek,all,Ignore: gcc15-fail,
+1,zeek,all,Inspect: build,
 1,zork,all,PKGBUG: c type,,"supp.c:29:19: error: conflicting types for ‘localtime’; have ‘struct tm *(void)’"
 1,zynaddsubfx,all,Ignore: excluded_arch,
