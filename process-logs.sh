@@ -251,10 +251,11 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 		#	continue
 		#fi
 
-		# Skip over builds that have not fully failed.
-		if [ "$(copr status $buildid)" != "failed" ]; then
-			continue
-		elif grep -q "^$name$" .gcc15-fail; then
+		# Skip over builds that have not fully failed. Not needed
+		# anymore since prebuild is complete.
+		#if [ "$(copr status $buildid)" != "failed" ]; then
+		#	continue
+		if grep -q "^$name$" .gcc15-fail; then
 			echo "1,$name,all,Ignore: gcc15-fail,"
 			continue
 		fi
