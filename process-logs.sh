@@ -1,5 +1,17 @@
 #!/bin/bash
 
+logdir=$(mktemp -d /tmp/mpblog.XXXXXXXX)
+
+cleanup() {
+	if [ -d $logdir ]; then
+		echo "Cleaning up $logdir"
+		rm -rf $logdir
+	fi
+}
+
+trap 'cleanup' 2
+trap 'cleanup' 15
+
 is_pkgbug_includes() {
 	if echo "$1" | tail -1 | grep -q -e "this is probably fixable by adding ‘#include" \
 		-e "use of undeclared identifier 'uint64_t'"; then
@@ -93,7 +105,11 @@ is_pkgbug_cxx_type() {
 is_pkgbug_cxx_std() {
 	if echo "$1" | grep -q -e "C++ versions less than C++.. are not supported" \
 		-e "note: .* is only available from C++.. onwards" \
+		-e "not match for .operator>>." \
+		-e "ambiguous overload for .operator!=." \
 		-e "‘concept’ does not name a type" \
+		-e "has no member named .destroy." \
+		-e " invalid conversion from .const char8_t*." \
 		-e "'experimental' in namespace 'std' does not name a type"; then
 		return 0
 	fi
@@ -112,7 +128,7 @@ find_cpp_error_line() {
 	logfile=$2
 
 	# A typical error line from gcc.
-	error_lines=$(zgrep -A 3 ":[0-9]\+:[0-9]\+: error: " $logfile | head -4)
+	error_lines=$(grep -A 3 ":[0-9]\+:[0-9]\+: error: " $logfile | head -4)
 
 	t=
 	if [ "x$error_lines" != "x" ]; then
@@ -156,7 +172,7 @@ find_cpp_error_line() {
 find_other_error_line() {
 	name=$1
 	logfile=$2
-	log_end="$(zcat $logfile | tail -500)"
+	log_end="$(cat $logfile | tail -500)"
 	error_line=
 
 	if echo "$log_end" | grep -q -e "\*\*\* No rule to make target"; then
@@ -190,7 +206,7 @@ find_ice() {
 		return 1
 	fi
 
-	error_line=$(zgrep ": internal compiler error:" $logfile | head -1)
+	error_line=$(grep ": internal compiler error:" $logfile | head -1)
 	if [ "x$error_line" != "x" ]; then
 		echo "1,$name,all,ICE,,\"$error_line\""
 		return 0
@@ -215,8 +231,8 @@ uninteresting_fails() {
 }
 
 packaging_error() {
-	logfile=$1
-	how="$(zgrep -A 1 '^RPM build errors:$' $logfile)"
+	logend=$1
+	how=$(echo "$logend" | grep -A 1 '^RPM build errors:$')
 	if echo $how | grep -q -e "not found" -e " unpackaged" -e "Empty %files file"; then
 		return 0
 	fi
@@ -255,12 +271,17 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 				continue
 			fi
 
-			failing_cmd="$(zgrep -A 1 "^ERROR: Command failed: $" $logfile | tail -1)"
+			# Decompress once.
+			zcat $logfile > $logdir/$pkg.log
+			logfile="$logdir/$pkg.log"
+			logend=$(tail -200 $logfile)
+
+			failing_cmd=$(echo "$logend" | grep -A 1 "^ERROR: Command failed: $" | tail -1)
 			if [[ "x$failing_cmd" == "x" && -z $result ]]; then
 				result="Ignore: infra_issue"
 			elif buildroot_failed "$failing_cmd" && [ -z "$result" ]; then
 				result="Ignore: buildroot_issue"
-			elif zgrep -qi -e "Architecture is excluded: " -e "Architecture is not included" $logfile && [ -z "$result" ]; then
+			elif echo "$logend" | grep -qi -e "Architecture is excluded: " -e "Architecture is not included" && [ -z "$result" ]; then
 				result="Ignore: excluded_arch"
 			fi
 
@@ -268,11 +289,11 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 				continue
 			fi
 
-			fail_stage=$(zgrep "Bad exit status from" $logfile | sed 's/.*(%\([^)]\+\))$/\1/' | tail -1)
+			fail_stage=$(echo "$logend" | grep "Bad exit status from" $logfile | sed 's/.*(%\([^)]\+\))$/\1/' | tail -1)
 			if uninteresting_fails $fail_stage; then
 				result="Ignore: pkgfail_$fail_stage"
 				continue
-			elif packaging_error $logfile; then
+			elif packaging_error "$logend"; then
 				result="Ignore: packaging"
 			elif [ -z "$result" ]; then # fallback result.
 				result="Inspect: $fail_stage"
