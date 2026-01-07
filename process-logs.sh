@@ -36,6 +36,13 @@ is_pkgbug_bounds() {
 	return 1
 }
 
+is_pkgbug_openmp() {
+	if echo "$1" | grep -qi -e " openmp "; then
+		return 0
+	fi
+	return 1
+}
+
 is_pkgbug_uninit() {
 	if echo "$1" | grep -q "\[-Werror=maybe-uninitialized\]"; then
 		return 0
@@ -108,8 +115,11 @@ is_pkgbug_cxx_std() {
 		-e "not match for .operator>>." \
 		-e "ambiguous overload for .operator!=." \
 		-e "‘concept’ does not name a type" \
+		-e "expected unqualified-id before" \
+		-e "redefiniton of .*abs(.*" \
 		-e "has no member named .destroy." \
 		-e " invalid conversion from .const char8_t*." \
+		-e " only available with .-std=c++" \
 		-e "'experimental' in namespace 'std' does not name a type"; then
 		return 0
 	fi
@@ -155,6 +165,8 @@ find_cpp_error_line() {
 			t="PKGBUG: internals"
 		elif is_pkgbug_includes "$error_lines"; then
 			t="PKGBUG: includes"
+		elif is_pkgbug_openmp "$error_lines"; then
+			t="PKGBUG: openmp"
 		elif is_gcc_derivative "$first_line"; then
 			t="GCC_DERIVATIVE"
 		else
@@ -171,8 +183,7 @@ find_cpp_error_line() {
 
 find_other_error_line() {
 	name=$1
-	logfile=$2
-	log_end="$(cat $logfile | tail -500)"
+	log_end=$2
 	error_line=
 
 	if echo "$log_end" | grep -q -e "\*\*\* No rule to make target"; then
@@ -275,7 +286,7 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 			# Decompress once.
 			zcat $logfile > $logdir/$pkg.log
 			logfile="$logdir/$pkg.log"
-			logend=$(tail -200 $logfile)
+			logend=$(tail -500 $logfile)
 
 			failing_cmd=$(echo "$logend" | grep -A 1 "^ERROR: Command failed: $" | tail -1)
 			if [[ "x$failing_cmd" == "x" && -z $result ]]; then
@@ -307,7 +318,7 @@ find -maxdepth 1 -type d | sed 's|^\./||' | grep -v '\.' | sed 's/-[0-9]\+$//' |
 			elif find_cpp_error_line $name $logfile; then
 				finished=1
 				break
-			elif find_other_error_line $name $logfile; then
+			elif find_other_error_line $name "$logend"; then
 				finished=1
 				break
 			fi
