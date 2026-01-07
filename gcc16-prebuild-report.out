@@ -1029,17 +1029,61 @@
 1,tuned-switcher,all,Ignore: excluded_arch,
 1,tuxpaint,all,PKGBUG: c23 str const,,"src/tuxpaint.c:13551:51: error: assignment of read-only location ‘*(const char *)strchr(short_lang_prefix, 95)’"
 1,tvtime,all,Ignore: gcc15-fail,
+1,tzdata,all,Ignore: buildroot_issue,
+1,ubloxcfg,all,PKGBUG: unused,,"ff/ff_nmea.c:296:9: error: variable ‘nTok’ set but not used [-Werror=unused-but-set-variable=]"
 1,uboot-tools,all,Inspect: build,
 1,ucx,all,Inspect: compile error,,"perftest.c:236:11: error: ‘master’ construct deprecated since OpenMP 5.1, use ‘masked’ [-Werror=deprecated-openmp]"
+1,ularn,all,Inspect: build,
+1,undbx,all,PKGBUG: unused,,"dbxread.c:178:9: error: variable ‘n’ set but not used [-Werror=unused-but-set-variable=]"
 1,usd,all,Ignore: buildroot_issue,
+1,uuid,all,Inspect: build,
+1,valeronoi,all,Inspect: compile error,,"/builddir/build/BUILD/valeronoi-0.2.1-build/Valeronoi-0.2.1/src/valeronoi.cpp:420:38: error: ‘void QCheckBox::stateChanged(int)’ is deprecated: Use checkStateChanged() instead [-Werror=deprecated-declarations]"
+1,valgrind,all,Inspect: check,
+1,varnish,all,PKGBUG: c23 str const,,"varnishncsa.c:611:15: error: assignment discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,vdr-live,all,PKGBUG: internals,,"/usr/include/cxxtools/string.h:54:33: error: ‘reference’ in ‘std::__cxx11::basic_string<cxxtools::Char>::allocator_type’ {aka ‘class std::allocator<cxxtools::Char>’} does not name a type"
+1,vecgeom,all,Inspect: compile error,,"/builddir/build/BUILD/vecgeom-1.2.7-build/VecGeom-v1.2.7/VecGeom/volumes/PlacedAssembly.h:172:21: error: inlining failed in call to ‘always_inline’ ‘vecgeom::cxx::PlacedAssembly::SafetyToIn(vecgeom::cxx::Vector3D<double> const&) const’: recursive inlining"
 1,vectorscan,all,Ignore: excluded_arch,
+1,verbiste,all,Ignore: packaging,
+1,veusz,all,Inspect: check,
+1,vips,all,Inspect: compile error,,"../libvips/include/vips/memory.h:44:25: error: void value not ignored as it ought to be"
+1,virglrenderer,all,PKGBUG: c type,,"../src/mesa/compat/c11/threads_posix.h:69:25: error: conflicting types for ‘once_flag’; have ‘pthread_once_t’ {aka ‘int’}"
+1,virt-v2v,all,Inspect: check,
 1,votca,all,Inspect: compile error,,"/builddir/build/BUILD/votca-2025.1-build/votca-2025.1/csg/src/tools/csg_gmxtopol.cc:80:12: error: reference to ‘format’ is ambiguous"
+1,vsomeip3,all,PKGBUG: bounds,,"/usr/include/c++/16/bits/shared_ptr_base.h:670:45: error: array subscript ‘std::_Sp_counted_ptr_inplace<vsomeip::message_impl, std::allocator<void>, __gnu_cxx::_S_atomic>[0]’ is partly outside array bounds of ‘unsigned char [48]’ [-Werror=array-bounds=]"
 1,vtk,all,Ignore: infra_issue,
+1,waffle,all,PKGBUG: c type,,"../third_party/threads/threads.h:105:25: error: conflicting types for ‘once_flag’; have ‘pthread_once_t’ {aka ‘int’}"
 1,wangle,all,Ignore: gcc15-fail,
 1,warsow,all,Inspect: compile error,,"/usr/include/c++/16/bits/stl_tree.h:1402:72: error: static assertion failed: comparison object must be invocable with two arguments of key type"
+1,warzone2100,all,Ignore: excluded_arch,
 1,wasmedge,all,Inspect: compile error,,"/builddir/build/BUILD/wasmedge-0.15.0-build/wasmedge/include/host/wasi/inode.h:982:7: error: defining ‘WasmEdge::Host::WASI::PollerContext’, which previously failed to be complete in a SFINAE context [-Werror=sfinae-incomplete=]"
+1,wayland-logout,all,Ignore: infra_issue,
+1,wildmagic5,all,Ignore: infra_issue,
 1,wine-mono,all,Inspect: build,
+1,wingpanel,all,Ignore: buildroot_issue,
 1,wivrn,all,Inspect: compile error,,"/builddir/build/BUILD/wivrn-25.12-build/WiVRn-25.12/dashboard/settings.cpp:544:27: error: ‘::close’ has not been declared; did you mean ‘pclose’?"
+1,wlroots,all,Ignore: infra_issue,
+1,wordnet,all,Inspect: compile error,,"stubs.c:43:14: error: invalid use of incomplete typedef ‘Tcl_Interp’"
+1,worminator,all,PKGBUG: c type,,"/usr/include/allegro/alcompat.h:44:7: error: conflicting types for ‘fadd’; have ‘fixed(fixed,  fixed)’ {aka ‘int(int,  int)’}"
+1,wsjtx,all,PKGBUG: fortran,,"Error: Missing actual argument ‘pos’ in call to ‘split’ at (1)"
 1,wult,all,Ignore: buildroot_issue,
+1,xalan-c,all,Inspect: compile error,,"/builddir/build/BUILD/xalan-c-1.12.0-build/xalan_c-1.12/src/xalanc/XMLSupport/XalanOtherEncodingWriter.hpp:323:31: error: ‘class xalanc_1_12::XalanOtherEncodingWriter<Predicate, ConstantsType>’ has no member named ‘m_isPresentable’ [-Wtemplate-body]"
+1,xcb-imdkit,all,Ignore: infra_issue,
+1,xclock,all,Inspect: build,
+1,xdg-desktop-portal-hyprland,all,Inspect: compile error,,"/builddir/build/BUILD/xdg-desktop-portal-hyprland-1.3.6-build/xdg-desktop-portal-hyprland-1.3.6/src/core/PortalManager.cpp:204:58: error: no matching function for call to ‘createSessionBusConnection(const char [45])’"
 1,xen,all,PKGBUG: c23 str const,,"libxl_internal.c:207:15: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]"
+1,xfce4-genmon-plugin,all,Ignore: infra_issue,
+1,xlockmore,all,Inspect: compile error,,"xglock.c:717:5: error: void value not ignored as it ought to be"
+1,xlog,all,Ignore: buildroot_issue,
+1,xpilot-ng,all,PKGBUG: c type,,"suibotdef.c:382:13: error: conflicting types for ‘Get_object_proximity’; have ‘char(player_t *, object_t *, double,  int,  object_proximity_t *)’ {aka ‘char(struct player *, struct xp_object *, double,  int,  object_proximity_t *)’}"
+1,xschem,all,Inspect: compile error,,"scheduler.c:3099:3: error: implicit declaration of function ‘va_start’ [-Wimplicit-function-declaration]"
+1,xsimd,all,Inspect: compile error,,"/builddir/build/BUILD/xsimd-13.2.0-build/xsimd-13.2.0/test/test_arch.cpp:29:72: error: static assertion failed: on arm, without sve, the best we can do is neon64"
+1,xss-lock,all,Ignore: infra_issue,
+1,xteddy,all,Ignore: infra_issue,
 1,xtensor-python,all,PKGBUG: c++ std,,"/usr/include/xtensor/utils/xutils.hpp:590:5: error: ‘concept’ does not name a type; did you mean ‘const’?"
+1,xwud,all,Ignore: infra_issue,
+1,yara,all,Ignore: infra_issue,
+1,yosys,all,Ignore: excluded_arch,
+1,ytalk,all,PKGBUG: proto mismatch,,"main.c:37:1: error: number of arguments doesn’t match prototype"
+1,zeek,all,Inspect: build,
+1,zork,all,PKGBUG: c type,,"supp.c:29:19: error: conflicting types for ‘localtime’; have ‘struct tm *(void)’"
+1,zynaddsubfx,all,Ignore: excluded_arch,
